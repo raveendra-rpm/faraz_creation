@@ -27,11 +27,10 @@
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
             <a href="techniques.html" class="active">TECHNIQUES</a>
-
             <a href="professionals.html">PROFESSIONALS</a>
             <a href="contact.html">CONTACT US</a>
         </nav>
-        
+        <button class="auth-btn" id="login-btn">LOGIN/SIGNUP</button>
 
         <!-- Mobile Menu Toggle -->
         <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
@@ -41,128 +40,181 @@
         </button>
     </header>
 
-    <!-- Techniques Hero -->
-    <section class="hero techniques-hero" id="techniques-hero">
+    <!-- ============================
+         IMMERSIVE HERO
+         ============================ -->
+    <section class="tech-hero" id="techniques-hero">
         <div class="hero-bg"
             style="background-image: url('https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2000&auto=format&fit=crop');">
         </div>
-        <div class="hero-content-wrapper" style="justify-content: center; padding-right: 0;">
-            <div class="hero-content text-center">
-                <p class="section-subtitle-sm" style="color: white; margin-bottom: 2rem; letter-spacing: 4px;">-
-                    TRADITION MEETS INNOVATION -</p>
-                <h1>Authenticity Begins<br>With You</h1>
+        <div class="tech-hero-overlay"></div>
+        <div class="tech-hero-content reveal-on-scroll">
+            <p class="tech-hero-eyebrow">— TRADITION MEETS INNOVATION —</p>
+            <h1 class="tech-hero-title">The Art Behind<br>Every Knot</h1>
+            <p class="tech-hero-sub">Five generations of mastery, woven into every fibre.</p>
+        </div>
+    </section>
+
+    <!-- ============================
+         INTRO QUOTE
+         ============================ -->
+    <section class="tech-intro section-padding" id="techniques-intro">
+        <div class="container text-center">
+            <blockquote class="tech-quote reveal-on-scroll">
+                <span class="tech-quote-mark">"</span>
+                Evolution in Love with Tradition
+                <span class="tech-quote-mark">"</span>
+            </blockquote>
+            <p class="tech-intro-desc reveal-on-scroll">
+                Our products are crafted through five distinct stages, each performed by hand using techniques
+                passed down through generations. From raw fibre to finished masterpiece, every step is an act of
+                devotion.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================
+         PROCESS TIMELINE
+         ============================ -->
+    <section class="tech-process" id="techniques-process">
+
+        <!-- Step 01 -->
+        <div class="tech-step reveal-on-scroll" id="technique-spinning">
+            <div class="tech-step-img">
+                <img src="https://images.unsplash.com/photo-1544321588-eabcd2ecefef?q=80&w=1200&auto=format&fit=crop"
+                    alt="Hand Spinning Filaments" loading="lazy">
+            </div>
+            <div class="tech-step-content">
+                <span class="tech-step-number">01</span>
+                <h4 class="tech-step-label">Step One</h4>
+                <h2 class="tech-step-title">Natural Fibre Preparation</h2>
+                <p>
+                    At Faraz, every masterpiece begins with the selection of the finest natural fibres. Whether it's
+                    premium wool, silk, or cotton, the process of hand-spinning filaments is where the soul of
+                    the rug begins.
+                </p>
+                <p>
+                    Our artisans carefully spin these fibres into high-quality yarns that serve as the foundation
+                    for the intricate knotting process. This traditional method ensures a texture that is both
+                    durable and incredibly soft to the touch.
+                </p>
             </div>
         </div>
+
+        <!-- Step 02 -->
+        <div class="tech-step tech-step-reverse reveal-on-scroll" id="technique-dyeing">
+            <div class="tech-step-img">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1200&auto=format&fit=crop"
+                    alt="The Dyeing Process" loading="lazy">
+            </div>
+            <div class="tech-step-content">
+                <span class="tech-step-number">02</span>
+                <h4 class="tech-step-label">Step Two</h4>
+                <h2 class="tech-step-title">The Master Dyer's Art</h2>
+                <p>
+                    Colour is the heart of a rug's character. Our master dyers use time-tested techniques to create
+                    deep, vibrant, and enduring palettes. By using natural and high-quality synthetic dyes, we achieve
+                    hues that age gracefully over decades.
+                </p>
+                <p>
+                    Each batch is meticulously hand-processed to ensure consistency and depth, providing the rich
+                    visual heritage that Faraz Carpets are known for.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="tech-step reveal-on-scroll" id="technique-design">
+            <div class="tech-step-img">
+                <img src="https://images.unsplash.com/photo-1560155016-bd4879ae8f21?q=80&w=1200&auto=format&fit=crop"
+                    alt="Precision Design Layout" loading="lazy">
+            </div>
+            <div class="tech-step-content">
+                <span class="tech-step-number">03</span>
+                <h4 class="tech-step-label">Step Three</h4>
+                <h2 class="tech-step-title">Bespoke Design &amp; Mapping</h2>
+                <p>
+                    Before a single knot is tied, our designers create high-precision maps (graphs) of the rug's
+                    pattern. Every motif and scroll is plotted with mathematical accuracy to guide the weavers.
+                </p>
+                <p>
+                    This stage is where traditional heritage meets contemporary innovation, allowing us to create
+                    both classic Persian motifs and minimalist modern masterpieces.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="tech-step tech-step-reverse reveal-on-scroll" id="technique-knotting">
+            <div class="tech-step-img">
+                <img src="https://images.unsplash.com/photo-1621235123926-29a997619251?q=80&w=1200&auto=format&fit=crop"
+                    alt="Hand Weaving Detail" loading="lazy">
+            </div>
+            <div class="tech-step-content">
+                <span class="tech-step-number">04</span>
+                <h4 class="tech-step-label">Step Four</h4>
+                <h2 class="tech-step-title">Hand-Knotting &amp; Weaving</h2>
+                <p>
+                    The most labour-intensive stage is the hand-knotting process. Skilled artisans tie thousands of
+                    individual knots per square inch, creating a dense and resilient pile that can last for
+                    generations.
+                </p>
+                <p>
+                    This is more than just manufacturing; it is a meditative act of creation. Each row of knots is
+                    beaten down with a heavy comb to ensure a tight, even surface that manifests the designer's
+                    vision in thread.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 05 -->
+        <div class="tech-step reveal-on-scroll" id="technique-finishing">
+            <div class="tech-step-img">
+                <img src="https://images.unsplash.com/photo-1579656334232-d17e38481498?q=80&w=1200&auto=format&fit=crop"
+                    alt="Final Finishing Process" loading="lazy">
+            </div>
+            <div class="tech-step-content">
+                <span class="tech-step-number">05</span>
+                <h4 class="tech-step-label">Step Five</h4>
+                <h2 class="tech-step-title">Finishing &amp; Lustre Wash</h2>
+                <p>
+                    Once off the loom, the rug undergoes a rigorous finishing process. This includes shearing to
+                    the desired pile height, hand-clipping to define details, and multiple lustre washes to enhance
+                    the natural sheen of the fibres.
+                </p>
+                <p>
+                    The result is a masterpiece that is ready to tie your room together—a Faraz rug that combines
+                    technical perfection with artistic soul.
+                </p>
+            </div>
+        </div>
+
     </section>
 
-    <!-- Technique Section 1: Introduction -->
-    <section class="section-padding bg-light" id="techniques-intro">
-        <div class="container text-center">
-            <h2 class="section-title">"Evolution in a Love with You"</h2>
-            <p class="section-desc">Our Products are crafted in different weaving techniques...</p>
-        </div>
-    </section>
-
-    <!-- Technique: Spinning -->
-    <section class="about-intro-split" id="technique-spinning">
-        <div class="about-img-full">
-            <img src="https://images.unsplash.com/photo-1544321588-eabcd2ecefef?q=80&w=1200&auto=format&fit=crop"
-                alt="Hand Spinning Filaments" loading="lazy">
-        </div>
-        <div class="about-content-full">
-            <h4 class="about-story-title">Step 01</h4>
-            <h2 class="about-story-h">Natural Fibre Preparation</h2>
-            <p class="about-story-p">
-                At Faraz, every masterpiece begins with the selection of the finest natural fibres. Whether it's premium
-                wool, silk, or cotton, the process of hand-spinning filaments is where the soul of the rug begins.
-            </p>
-            <p class="about-story-p">
-                Our artisans carefully spin these fibres into high-quality yarns that serve as the foundation for the
-                intricate knotting process. This traditional method ensures a texture that is both durable and
-                incredibly soft to the touch.
-            </p>
-        </div>
-    </section>
-
-    <!-- Technique: Dyeing -->
-    <section class="about-intro-split reverse" id="technique-dyeing">
-        <div class="about-content-full bg-light">
-            <h4 class="about-story-title">Step 02</h4>
-            <h2 class="about-story-h">The Master Dyer's Art</h2>
-            <p class="about-story-p">
-                Colour is the heart of a rug's character. Our master dyers use time-tested techniques to create deep,
-                vibrant, and enduring palettes. By using natural and high-quality synthetic dyes, we achieve hues that
-                age gracefully over decades.
-            </p>
-            <p class="about-story-p">
-                Each batch is meticulously hand-processed to ensure consistency and depth, providing the rich visual
-                heritage that Faraz Carpets are known for.
-            </p>
-        </div>
-        <div class="about-img-full">
-            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1200&auto=format&fit=crop"
-                alt="The Dyeing Process" loading="lazy">
-        </div>
-    </section>
-
-    <!-- Technique: Design -->
-    <section class="about-intro-split" id="technique-design">
-        <div class="about-img-full">
-            <img src="https://images.unsplash.com/photo-1560155016-bd4879ae8f21?q=80&w=1200&auto=format&fit=crop"
-                alt="Precision Design Layout" loading="lazy">
-        </div>
-        <div class="about-content-full">
-            <h4 class="about-story-title">Step 03</h4>
-            <h2 class="about-story-h">Bespoke Design &amp; Mapping</h2>
-            <p class="about-story-p">
-                Before a single knot is tied, our designers create high-precision maps (graphs) of the rug's pattern.
-                Every motif and scroll is plotted with mathematical accuracy to guide the weavers.
-            </p>
-            <p class="about-story-p">
-                This stage is where traditional heritage meets contemporary innovation, allowing us to create both
-                classic Persian motifs and minimalist modern masterpieces.
-            </p>
-        </div>
-    </section>
-
-    <!-- Technique: Knotting -->
-    <section class="about-intro-split reverse" id="technique-knotting">
-        <div class="about-content-full bg-light">
-            <h4 class="about-story-title">Step 04</h4>
-            <h2 class="about-story-h">Hand-Knotting &amp; Weaving</h2>
-            <p class="about-story-p">
-                The most labour-intensive stage is the hand-knotting process. Skilled artisans tie thousands of
-                individual knots per square inch, creating a dense and resilient pile that can last for generations.
-            </p>
-            <p class="about-story-p">
-                This is more than just manufacturing; it is a meditative act of creation. Each row of knots is beaten
-                down with a heavy comb to ensure a tight, even surface that manifests the designer's vision in thread.
-            </p>
-        </div>
-        <div class="about-img-full">
-            <img src="https://images.unsplash.com/photo-1621235123926-29a997619251?q=80&w=1200&auto=format&fit=crop"
-                alt="Hand Weaving Detail" loading="lazy">
-        </div>
-    </section>
-
-    <!-- Technique: Finishing -->
-    <section class="about-intro-split" id="technique-finishing">
-        <div class="about-img-full">
-            <img src="https://images.unsplash.com/photo-1579656334232-d17e38481498?q=80&w=1200&auto=format&fit=crop"
-                alt="Final Finishing Process" loading="lazy">
-        </div>
-        <div class="about-content-full">
-            <h4 class="about-story-title">Step 05</h4>
-            <h2 class="about-story-h">Finishing &amp; Lustre Wash</h2>
-            <p class="about-story-p">
-                Once off the loom, the rug undergoes a rigorous finishing process. This includes shearing to the desired
-                pile height, hand-clipping to define details, and multiple lustre washes to enhance the natural sheen of
-                the fibres.
-            </p>
-            <p class="about-story-p">
-                The result is a masterpiece that is ready to tie your room together—a Faraz rug that combines technical
-                perfection with artistic soul.
-            </p>
+    <!-- ============================
+         CRAFTSMANSHIP STATS
+         ============================ -->
+    <section class="tech-stats section-padding bg-light" id="tech-stats">
+        <div class="container">
+            <h2 class="section-title text-center reveal-on-scroll">By The Numbers</h2>
+            <div class="tech-stats-grid reveal-on-scroll">
+                <div class="tech-stat-item">
+                    <span class="tech-stat-num">500+</span>
+                    <span class="tech-stat-label">Knots Per Sq. Inch</span>
+                </div>
+                <div class="tech-stat-item">
+                    <span class="tech-stat-num">5</span>
+                    <span class="tech-stat-label">Generations of Craft</span>
+                </div>
+                <div class="tech-stat-item">
+                    <span class="tech-stat-num">100%</span>
+                    <span class="tech-stat-label">Handmade Process</span>
+                </div>
+                <div class="tech-stat-item">
+                    <span class="tech-stat-num">50+</span>
+                    <span class="tech-stat-label">Natural Dye Colours</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -254,10 +306,20 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.about-intro-split, .about-img-full, .about-content-full').forEach(el => {
-            el.classList.add('reveal-on-scroll');
-            observer.observe(el);
-        });
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Animate stat numbers on scroll
+        const statNums = document.querySelectorAll('.tech-stat-num');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('stat-animate');
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNums.forEach(el => statsObserver.observe(el));
     </script>
 
 </body>

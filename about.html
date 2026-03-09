@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Faraz Handcrafted Carpets</title>
     <meta name="description"
-        content="Learn about Faraz Handcrafted Carpets — a legacy built on craftsmanship, culture, and tradition since the early 1990s.">
+        content="Learn about Faraz Creation — a legacy built on craftsmanship, culture, and tradition since the early 1990s.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 <body>
 
     <!-- Header -->
-    <header class="main-header about-header header-scrolled" id="main-header">
+    <header class="main-header" id="main-header">
         <div class="logo">
             <h2>FARAZ</h2>
             <span>HANDCRAFTED CARPETS</span>
@@ -27,11 +27,10 @@
             <a href="index.html">HOME</a>
             <a href="about.html" class="active">ABOUT</a>
             <a href="techniques.html">TECHNIQUES</a>
-
             <a href="professionals.html">PROFESSIONALS</a>
             <a href="contact.html">CONTACT US</a>
         </nav>
-        
+        <button class="auth-btn" id="login-btn">LOGIN/SIGNUP</button>
 
         <!-- Mobile Menu Toggle -->
         <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
@@ -41,61 +40,179 @@
         </button>
     </header>
 
-    <!-- Spacer for fixed header on light-bg pages -->
-    <div style="height: 80px;"></div>
-
-    <!-- About Intro Section -->
-    <section class="about-intro-split" id="about-intro">
-        <div class="about-img-full">
-            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1200&auto=format&fit=crop"
-                alt="The Art of Weaving" loading="lazy">
+    <!-- ============================
+         IMMERSIVE HERO
+         ============================ -->
+    <section class="about-hero-v2" id="about-hero">
+        <div class="hero-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=2000&auto=format&fit=crop');">
         </div>
-        <div class="about-content-full">
-            <div class="quote-wrapper">
-                <div class="quote-icon">&ldquo;</div>
-                <h2 class="about-quote-text">A good rug can tie a whole room together.</h2>
-                <span class="quote-author">Ahmad Ansari</span>
+        <div class="about-hero-overlay"></div>
+        <div class="about-hero-content reveal-on-scroll">
+            <p class="about-hero-eyebrow">— SINCE THE EARLY 1990s —</p>
+            <h1 class="about-hero-title">Our Story</h1>
+            <p class="about-hero-sub">A legacy built on craftsmanship, culture, and an unwavering love for handmade
+                rugs.</p>
+        </div>
+    </section>
+
+    <!-- ============================
+         FOUNDER QUOTE
+         ============================ -->
+    <section class="about-quote-section section-padding" id="about-quote">
+        <div class="container text-center">
+            <blockquote class="about-quote-v2 reveal-on-scroll">
+                <span class="about-quote-mark">"</span>
+                A good rug can tie a whole room together.
+                <span class="about-quote-mark">"</span>
+            </blockquote>
+            <p class="about-quote-author reveal-on-scroll">— Ahmad Ansari, Founder</p>
+        </div>
+    </section>
+
+    <!-- ============================
+         OUR STORY — SPLIT LAYOUT
+         ============================ -->
+    <section class="about-story-v2 section-padding bg-light" id="about-story">
+        <div class="container">
+            <div class="about-story-grid reveal-on-scroll">
+                <div class="about-story-text">
+                    <h4 class="about-eyebrow-label">About Faraz</h4>
+                    <h2 class="about-heading-v2">Three Decades of<br>Artisan Heritage</h2>
+                    <p>
+                        At <strong>Faraz Creation</strong>, we believe that a carpet is more than just a
+                        furnishing—it's a legacy of culture, craftsmanship, and creativity. Founded in the early
+                        1990s, Faraz has grown from a modest manufacturing unit into a respected name in the world
+                        of handmade rugs and carpets, both in India and globally.
+                    </p>
+                    <p>
+                        With over three decades of experience, we continue to honour the age-old traditions of rug
+                        weaving while embracing the innovation and aesthetics of contemporary design. Our roots lie
+                        deep in India's rich textile heritage.
+                    </p>
+                    <p>
+                        Every rug we create is a result of meticulous craftsmanship, passed down through generations
+                        of skilled artisans. From the spinning of natural fibres to the intricate knotting and finishing
+                        process, our carpets are entirely handmade—reflecting the soul and skill of the hands that
+                        weave them.
+                    </p>
+                </div>
+                <div class="about-story-img">
+                    <img src="https://images.unsplash.com/photo-1621235123926-29a997619251?q=80&w=1200&auto=format&fit=crop"
+                        alt="Meticulous Hand Weaving" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Story Section -->
-    <section class="about-intro-split reverse" id="about-story">
-        <div class="about-content-full bg-light">
-            <div class="story-content">
-                <h4 class="about-story-title">About Faraz</h4>
-                <h2 class="about-story-h">Our Story</h2>
+    <!-- ============================
+         VALUES / PILLARS
+         ============================ -->
+    <section class="about-values section-padding" id="about-values">
+        <div class="container text-center">
+            <h2 class="about-heading-v2 reveal-on-scroll">What We Stand For</h2>
+            <p class="about-values-sub reveal-on-scroll">The principles that guide every knot we tie and every rug we
+                craft.</p>
 
-                <p class="about-story-p">
-                    At <strong>Faraz Handcrafted Carpets</strong>, we believe that a carpet is more than just a
-                    furnishing—it's a legacy of culture, craftsmanship, and creativity. Founded in the early 1990s,
-                    Faraz has grown from a modest manufacturing unit into a respected name in the world of handmade rugs
-                    and carpets, both in India and globally.
-                </p>
-                <p class="about-story-p">
-                    With over three decades of experience, we continue to honour the age-old traditions of rug weaving
-                    while embracing the innovation and aesthetics of contemporary design. Our roots lie deep in India's
-                    rich textile heritage. Every rug we create is a result of meticulous craftsmanship, passed down
-                    through generations of skilled artisans.
-                </p>
-                <p class="about-story-p">
-                    From the spinning of natural fibres to the intricate knotting and finishing process, our carpets are
-                    entirely handmade—reflecting the soul and skill of the hands that weave them.
-                </p>
-                <p class="about-story-p">
-                    Today, Faraz carpets adorn homes, hotels, galleries, and institutions around the world, celebrated
-                    for their quality, uniqueness, and artistry. At our core, we remain a family-driven
-                    enterprise—rooted in values of integrity, excellence, and a genuine love for handmade rugs.
-                </p>
-                <p class="about-story-p font-bold mt-4">
-                    At Faraz Handcrafted Carpets, every rug tells a story. Let us help you find one that becomes part of
-                    yours.
-                </p>
+            <div class="about-values-grid">
+                <div class="about-value-card reveal-on-scroll">
+                    <div class="about-value-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+                    <h4>Passion for Craft</h4>
+                    <p>Every rug is a labour of love, woven with devotion by artisans who have perfected their craft
+                        over generations.</p>
+                </div>
+                <div class="about-value-card reveal-on-scroll">
+                    <div class="about-value-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h4>Uncompromising Quality</h4>
+                    <p>We use only the finest natural fibres and dyes, ensuring each piece ages beautifully and lasts
+                        for generations.</p>
+                </div>
+                <div class="about-value-card reveal-on-scroll">
+                    <div class="about-value-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h4>Global Reach</h4>
+                    <p>Our carpets adorn homes, hotels, galleries, and institutions around the world, celebrated for
+                        their artistry.</p>
+                </div>
+                <div class="about-value-card reveal-on-scroll">
+                    <div class="about-value-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h4>Family Values</h4>
+                    <p>At our core, we remain a family-driven enterprise—rooted in integrity, excellence, and genuine
+                        care.</p>
+                </div>
             </div>
         </div>
-        <div class="about-img-full">
-            <img src="https://images.unsplash.com/photo-1621235123926-29a997619251?q=80&w=1200&auto=format&fit=crop"
-                alt="Meticulous Weaving" loading="lazy">
+    </section>
+
+    <!-- ============================
+         FULL-WIDTH BANNER
+         ============================ -->
+    <section class="about-banner" id="about-banner">
+        <div class="hero-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2000&auto=format&fit=crop');">
+        </div>
+        <div class="about-banner-overlay"></div>
+        <div class="about-banner-content reveal-on-scroll">
+            <h2>Every Rug Tells a Story</h2>
+            <p>Today, Faraz carpets adorn homes, hotels, galleries, and institutions around the world.
+                Let us help you find a rug that becomes part of yours.</p>
+            <a href="contact.html" class="pro-hero-btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- ============================
+         MILESTONES
+         ============================ -->
+    <section class="about-milestones section-padding bg-light" id="about-milestones">
+        <div class="container text-center">
+            <h2 class="about-heading-v2 reveal-on-scroll">Our Journey</h2>
+
+            <div class="about-milestone-grid reveal-on-scroll">
+                <div class="about-milestone-item">
+                    <span class="about-milestone-year">1990s</span>
+                    <h4>The Beginning</h4>
+                    <p>Founded as a small manufacturing unit in the heart of India's rug-weaving belt.</p>
+                </div>
+                <div class="about-milestone-item">
+                    <span class="about-milestone-year">2000s</span>
+                    <h4>Going Global</h4>
+                    <p>Expanded to international markets, bringing Indian craftsmanship to homes across the globe.</p>
+                </div>
+                <div class="about-milestone-item">
+                    <span class="about-milestone-year">2010s</span>
+                    <h4>Design Innovation</h4>
+                    <p>Launched our bespoke design studio, merging traditional techniques with modern aesthetics.</p>
+                </div>
+                <div class="about-milestone-item">
+                    <span class="about-milestone-year">Today</span>
+                    <h4>A Global Legacy</h4>
+                    <p>A respected name worldwide, certified by GoodWeave and STEP for ethical craftsmanship.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -156,6 +273,16 @@
     </footer>
 
     <script>
+        // Header scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
         // Mobile menu toggle
         const mobileToggle = document.getElementById('mobile-toggle');
         const desktopNav = document.getElementById('desktop-nav');
@@ -177,10 +304,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.about-intro-split, .about-img-full, .about-content-full').forEach(el => {
-            el.classList.add('reveal-on-scroll');
-            observer.observe(el);
-        });
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
     </script>
 
 </body>
