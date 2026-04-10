@@ -8,6 +8,7 @@
     <meta name="description"
         content="Get in touch with Faraz Creation. Visit us in person or reach out via WhatsApp, email, or phone.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,13 +28,11 @@
             </nav>
 
             <div class="logo-area">
-                <div class="logo-circle">
-                    <div class="logo-inner">
-                        <span class="logo-top">FC</span>
-                        <span class="logo-middle">Faraz Creation</span>
-                        <span class="logo-bottom">Creating Imaginations...</span>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-circle">
+                        <img src="images/logo.png" alt="Faraz Creation Logo" class="main-logo">
                     </div>
-                </div>
+                </a>
             </div>
 
             <nav class="nav-right">
@@ -44,6 +43,15 @@
                         </svg></a>
                 </div>
                 <a href="contact.html" class="active">Contact Us</a>
+                <a href="professionals.html">For Designers</a>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <nav class="desktop-nav" id="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="techniques.html">Techniques</a>
+                <a href="contact.html">Contact Us</a>
                 <a href="professionals.html">For Designers</a>
             </nav>
 
@@ -91,7 +99,7 @@
                 <h3>Faraz Creation</h3>
                 <p>Gopal Patti, Chauri Road, Bhadohi, UP 221401</p>
                 <p>
-                    <a href="mailto:bestcarpetss@gmail.com">bestcarpetss@gmail.com</a> /
+                    <a href="mailto:faraz.creation.india@gmail.com">faraz.creation.india@gmail.com</a> /
                     <a href="tel:+918576954907">+91-8576954907</a>
                 </p>
             </div>
@@ -132,7 +140,7 @@
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                 <polyline points="22,6 12,13 2,6" />
                             </svg>
-                            <span>bestcarpetss@gmail.com</span>
+                            <span>faraz.creation.india@gmail.com</span>
                         </div>
                         <div class="contact-detail-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -221,6 +229,7 @@
             mobileToggle.addEventListener('click', () => {
                 desktopNav.classList.toggle('nav-open');
                 mobileToggle.classList.toggle('toggle-active');
+                document.body.classList.toggle('menu-open');
             });
         }
 

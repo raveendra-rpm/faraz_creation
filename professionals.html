@@ -8,6 +8,7 @@
     <meta name="description"
         content="Partner with Faraz Creation to bring your interior design visions to life through custom-made, premium handmade rugs tailored to your project.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,13 +28,11 @@
             </nav>
 
             <div class="logo-area">
-                <div class="logo-circle">
-                    <div class="logo-inner">
-                        <span class="logo-top">FC</span>
-                        <span class="logo-middle">Faraz Creation</span>
-                        <span class="logo-bottom">Creating Imaginations...</span>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-circle">
+                        <img src="images/logo.png" alt="Faraz Creation Logo" class="main-logo">
                     </div>
-                </div>
+                </a>
             </div>
 
             <nav class="nav-right">
@@ -45,6 +44,15 @@
                 </div>
                 <a href="contact.html">Contact Us</a>
                 <a href="professionals.html" class="active">For Designers</a>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <nav class="desktop-nav" id="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="techniques.html">Techniques</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="professionals.html">For Designers</a>
             </nav>
 
             <!-- Mobile Menu Toggle -->
@@ -328,6 +336,7 @@
             mobileToggle.addEventListener('click', () => {
                 desktopNav.classList.toggle('nav-open');
                 mobileToggle.classList.toggle('toggle-active');
+                document.body.classList.toggle('menu-open');
             });
         }
 

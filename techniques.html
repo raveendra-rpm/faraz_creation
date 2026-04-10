@@ -8,6 +8,7 @@
     <meta name="description"
         content="Explore the traditional rug-making techniques at Faraz — from natural fibre spinning to hand-knotting and finishing.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,13 +28,11 @@
             </nav>
 
             <div class="logo-area">
-                <div class="logo-circle">
-                    <div class="logo-inner">
-                        <span class="logo-top">FC</span>
-                        <span class="logo-middle">Faraz Creation</span>
-                        <span class="logo-bottom">Creating Imaginations...</span>
+                <a href="index.html" class="logo-link">
+                    <div class="logo-circle">
+                        <img src="images/logo.png" alt="Faraz Creation Logo" class="main-logo">
                     </div>
-                </div>
+                </a>
             </div>
 
             <nav class="nav-right">
@@ -43,6 +42,15 @@
                             <path d="M1 1L5 5L9 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></a>
                 </div>
+                <a href="contact.html">Contact Us</a>
+                <a href="professionals.html">For Designers</a>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <nav class="desktop-nav" id="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="techniques.html">Techniques</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="professionals.html">For Designers</a>
             </nav>
@@ -61,7 +69,7 @@
          ============================ -->
     <section class="tech-hero" id="techniques-hero">
         <div class="hero-bg"
-            style="background-image: url('https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2000&auto=format&fit=crop');">
+            style="background-image: url('./images/the_art_behind_faraz.webp');">
         </div>
         <div class="tech-hero-overlay"></div>
         <div class="tech-hero-content reveal-on-scroll">
@@ -97,7 +105,7 @@
         <!-- Step 01 -->
         <div class="tech-step reveal-on-scroll" id="technique-spinning">
             <div class="tech-step-img">
-                <img src="https://images.unsplash.com/photo-1544321588-eabcd2ecefef?q=80&w=1200&auto=format&fit=crop"
+                <img src="./images/natura_fibre_preparation_rugs.avif"
                     alt="Hand Spinning Filaments" loading="lazy">
             </div>
             <div class="tech-step-content">
@@ -120,7 +128,7 @@
         <!-- Step 02 -->
         <div class="tech-step tech-step-reverse reveal-on-scroll" id="technique-dyeing">
             <div class="tech-step-img">
-                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1200&auto=format&fit=crop"
+                <img src="./images/the_master_dyer's_art.jpg"
                     alt="The Dyeing Process" loading="lazy">
             </div>
             <div class="tech-step-content">
@@ -142,7 +150,7 @@
         <!-- Step 03 -->
         <div class="tech-step reveal-on-scroll" id="technique-design">
             <div class="tech-step-img">
-                <img src="https://images.unsplash.com/photo-1560155016-bd4879ae8f21?q=80&w=1200&auto=format&fit=crop"
+                <img src="./images/bespoke_design_mapping.jpg"
                     alt="Precision Design Layout" loading="lazy">
             </div>
             <div class="tech-step-content">
@@ -163,7 +171,7 @@
         <!-- Step 04 -->
         <div class="tech-step tech-step-reverse reveal-on-scroll" id="technique-knotting">
             <div class="tech-step-img">
-                <img src="https://images.unsplash.com/photo-1621235123926-29a997619251?q=80&w=1200&auto=format&fit=crop"
+                <img src="./images/hand-knotting_weaving_faraz.jpg"
                     alt="Hand Weaving Detail" loading="lazy">
             </div>
             <div class="tech-step-content">
@@ -186,7 +194,7 @@
         <!-- Step 05 -->
         <div class="tech-step reveal-on-scroll" id="technique-finishing">
             <div class="tech-step-img">
-                <img src="https://images.unsplash.com/photo-1579656334232-d17e38481498?q=80&w=1200&auto=format&fit=crop"
+                <img src="./images/finishing_lustre_wash_faraz.png"
                     alt="Final Finishing Process" loading="lazy">
             </div>
             <div class="tech-step-content">
@@ -308,6 +316,7 @@
             mobileToggle.addEventListener('click', () => {
                 desktopNav.classList.toggle('nav-open');
                 mobileToggle.classList.toggle('toggle-active');
+                document.body.classList.toggle('menu-open');
             });
         }
 
