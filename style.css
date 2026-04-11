@@ -1360,6 +1360,8 @@ button {
         left: 0;
         width: 100%;
         height: auto;
+        max-height: 100vh;
+        overflow-y: auto;
         min-height: 50vh;
         background: var(--color-bg-light);
         flex-direction: column;
@@ -1372,6 +1374,7 @@ button {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+
 
     .desktop-nav a {
         color: var(--color-text-dark);
