@@ -1359,10 +1359,9 @@ button {
         top: -150%;
         left: 0;
         width: 100%;
-        height: auto;
-        max-height: 100vh;
+        height: 100vh;
         overflow-y: auto;
-        min-height: 50vh;
+        -webkit-overflow-scrolling: touch;
         background: var(--color-bg-light);
         flex-direction: column;
         padding: 100px 30px 40px;
@@ -1374,6 +1373,7 @@ button {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+
 
 
     .desktop-nav a {
