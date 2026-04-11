@@ -950,6 +950,31 @@ button {
 /* ============================================
    HERITAGE SECTION
    ============================================ */
+.heritage {
+    position: relative;
+    background-image: url('./images/heritage_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heritage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 252, 251, 0.92); /* var(--color-bg-light) with opacity */
+    z-index: 0;
+}
+
+.heritage > .container {
+    position: relative;
+    z-index: 1;
+}
+
 .heritage-content {
     align-items: stretch;
 }
