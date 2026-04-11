@@ -163,12 +163,12 @@ img {
 
 /* Typography Classes */
 .section-title {
-    font-family: var(--primary-font); /* Matches Our Heritage */
+    font-family: var(--accent-font);
     font-size: 2.5rem;
-    font-style: normal; /* Removed italic to match Our Heritage */
+    font-style: italic;
     color: var(--color-accent-dark);
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .section-subtitle {
