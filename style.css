@@ -456,10 +456,85 @@ button {
 }
 
 /* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropbtn {
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-white);
+    min-width: 180px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1010;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 15px; /* Spaced out slightly from the header line */
+}
+
+/* Arrow pointer on top of dropdown */
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-white);
+}
+
+.header-scrolled .dropdown-content {
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: var(--color-text-dark) !important;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.9rem !important;
+    transition: all 0.3s ease;
+    background-color: var(--color-white);
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a::after {
+    display: none !important;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
+    color: var(--color-accent-dark) !important;
+    padding-left: 25px; /* Slight indent on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeInDropdown 0.3s ease forwards;
+}
+
+@keyframes fadeInDropdown {
+    from { opacity: 0; transform: translate(-50%, 15px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
 }
 
 /* Mobile Menu */
@@ -986,18 +1061,9 @@ button {
 /* ============================================
    FOOTER & FORM
    ============================================ */
-.footer {
-    background-color: var(--color-text-dark);
-    color: var(--color-white);
-}
-
-.footer .text-gray {
-    color: #b3b3b3;
-}
-
 .contact-icon {
     display: inline-block;
-    background-color: var(--color-accent);
+    background-color: var(--color-text-dark);
     color: var(--color-white);
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -1018,40 +1084,38 @@ button {
 .form-group label {
     width: 100px;
     font-size: 0.9rem;
-    color: #b3b3b3;
+    color: var(--color-text-gray);
 }
 
 .form-group input {
     flex: 1;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid var(--color-border);
     padding: 10px 0;
     background: transparent;
     outline: none;
     font-family: var(--secondary-font);
     font-size: 1rem;
-    color: var(--color-white);
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus {
-    border-bottom-color: var(--color-accent-light);
+    border-bottom-color: var(--color-accent-dark);
 }
 
 .btn-submit {
     background: transparent;
     border: none;
-    color: var(--color-white);
+    color: var(--color-text-gray);
     font-size: 1rem;
     letter-spacing: 2px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid var(--color-text-gray);
     padding-bottom: 5px;
-    transition: var(--transition-smooth);
 }
 
 .btn-submit:hover {
-    color: var(--color-accent-light);
-    border-color: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
 }
 
 /* Social Links */
@@ -1068,8 +1132,8 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--color-white);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-gray);
     transition: var(--transition-smooth);
 }
 
@@ -1091,7 +1155,7 @@ button {
 }
 
 .footer-nav a {
-    color: #b3b3b3;
+    color: var(--color-text-gray);
     position: relative;
 }
 
@@ -1102,12 +1166,12 @@ button {
     left: 0;
     width: 0;
     height: 1px;
-    background: var(--color-accent-light);
+    background: var(--color-accent);
     transition: width 0.3s ease;
 }
 
 .footer-nav a:hover {
-    color: var(--color-white);
+    color: var(--color-accent-dark);
 }
 
 .footer-nav a:hover::after {
