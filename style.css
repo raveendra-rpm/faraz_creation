@@ -459,7 +459,8 @@ button {
 /* Dropdown */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 /* Invisible bridge to prevent hover loss between header and dropdown */
@@ -479,7 +480,6 @@ button {
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    padding: 10px 0; /* Add some padding to increase hover target */
 }
 
 .dropdown-content {
