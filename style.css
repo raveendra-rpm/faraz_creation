@@ -975,6 +975,13 @@ button {
     z-index: 1;
 }
 
+/* Custom colors for Heritage section to match image */
+.heritage .section-title-lg,
+.heritage .section-subtitle-sm {
+    color: #a65d3a;
+}
+
+
 .heritage-content {
     align-items: stretch;
 }
@@ -1003,7 +1010,7 @@ button {
     justify-content: center;
     padding: 0 40px;
     font-size: 1.05rem;
-    color: var(--color-text-gray);
+    color: #a65d3a;
     line-height: 1.8;
 }
 
