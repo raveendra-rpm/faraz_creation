@@ -1485,6 +1485,15 @@ button {
         font-size: 2.4rem;
     }
 
+    .hero-subtitle-glow {
+        padding: 10px 20px;
+    }
+
+    .hero-subtitle-minimal {
+        letter-spacing: 4px;
+        font-size: 0.4em;
+    }
+
     .section-title {
         font-size: 1.8rem;
     }
