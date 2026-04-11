@@ -45,6 +45,10 @@
                         <a href="#collection">Kashan</a>
                         <a href="#collection">Isfahan</a>
                         <a href="#collection">Tabriz</a>
+                        <a href="#collection">Oushak</a>
+                        <a href="#collection">Heriz</a>
+                        <a href="#collection">Gabbeh</a>
+                        <a href="#collection">Kilim</a>
                     </div>
                 </div>
                 <a href="contact.html">Contact Us</a>
@@ -56,7 +60,22 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About us</a>
                 <a href="techniques.html">Techniques</a>
-                <a href="#collection" style="color: var(--color-accent-dark); font-weight: 600;">Collections</a>
+                
+                <!-- Mobile Collections Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropbtn">Collections <span>▼</span></button>
+                    <div class="mobile-dropdown-content">
+                        <a href="#collection">Shiraz</a>
+                        <a href="#collection">Kashan</a>
+                        <a href="#collection">Isfahan</a>
+                        <a href="#collection">Tabriz</a>
+                        <a href="#collection">Oushak</a>
+                        <a href="#collection">Heriz</a>
+                        <a href="#collection">Gabbeh</a>
+                        <a href="#collection">Kilim</a>
+                    </div>
+                </div>
+
                 <a href="contact.html">Contact Us</a>
                 <a href="professionals.html">For Designers</a>
             </nav>
@@ -426,6 +445,15 @@
                 document.body.classList.toggle('menu-open');
             });
         }
+
+        // Mobile Dropdown Toggle
+        document.querySelectorAll('.mobile-dropbtn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parent = btn.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
 
         // Scroll reveal animations
         const observerOptions = {

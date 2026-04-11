@@ -1384,6 +1384,57 @@ button {
         top: 0;
     }
 
+    /* Mobile Dropdown */
+    .mobile-dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-dropbtn {
+        background: transparent;
+        color: var(--color-text-dark);
+        font-size: 1.1rem;
+        padding: 10px 0;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-dropbtn span {
+        font-size: 0.7rem;
+        transition: transform 0.3s ease;
+    }
+
+    .mobile-dropdown-content {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        background: rgba(162, 123, 96, 0.05);
+        border-radius: 8px;
+        margin-top: 5px;
+    }
+
+    .mobile-dropdown.active .mobile-dropdown-content {
+        display: flex;
+    }
+
+    .mobile-dropdown.active .mobile-dropbtn span {
+        transform: rotate(180deg);
+    }
+
+    .mobile-dropdown-content a {
+        font-size: 0.95rem !important;
+        color: var(--color-text-gray) !important;
+        padding: 5px 0 !important;
+    }
+
+
     .mobile-menu-toggle {
         display: flex;
         flex-direction: column;
