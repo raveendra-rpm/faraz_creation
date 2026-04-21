@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Preview - Faraz Handcrafted Luxury Rugs</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .preview-section {
+            padding-top: 150px;
+            min-height: 100vh;
+            background-color: var(--color-bg-light);
+        }
+
+        .preview-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .preview-image-container {
+            position: sticky;
+            top: 120px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        .preview-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .preview-details {
+            padding: 20px 0;
+        }
+
+        .preview-eyebrow {
+            font-family: var(--secondary-font);
+            font-size: 0.85rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+
+        .preview-title {
+            font-family: var(--accent-font);
+            font-size: 3.5rem;
+            color: var(--color-text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .preview-desc {
+            font-size: 1.1rem;
+            color: var(--color-text-gray);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .spec-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 3rem;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            padding: 2rem 0;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: var(--color-text-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .spec-value {
+            color: var(--color-text-gray);
+        }
+
+        .enquiry-box {
+            background: #fff;
+            padding: 40px;
+            border: 1px solid var(--color-border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        }
+
+        .enquiry-box h3 {
+            font-family: var(--primary-font);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--color-text-gray);
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .back-link:hover {
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 992px) {
+            .preview-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .preview-image-container {
+                position: relative;
+                top: 0;
+            }
+
+            .preview-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Consistent with heriz.html) -->
+    <header class="main-header header-scrolled" id="main-header">
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="techniques.html">Techniques</a>
+            </nav>
+
+            <div class="logo-area">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-circle" style="width: 90px; height: 90px; transform: translateY(0);">
+                        <img src="images/logo.png?v=2" alt="Faraz Creation Logo" class="main-logo">
+                    </div>
+                </a>
+            </div>
+
+            <nav class="nav-right">
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Collections <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                            stroke="currentColor">
+                            <path d="M1 1L5 5L9 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#collection">Shiraz</a>
+                        <a href="index.html#collection">Kashan</a>
+                        <a href="index.html#collection">Isfahan</a>
+                        <a href="index.html#collection">Tabriz</a>
+                        <a href="index.html#collection">Oushak</a>
+                        <a href="heriz.html">Heriz</a>
+                        <a href="index.html#collection">Gabbeh</a>
+                        <a href="index.html#collection">Kilim</a>
+                    </div>
+                </div>
+                <a href="contact.html">Contact Us</a>
+                <a href="professionals.html">For Designers</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="preview-section">
+        <div class="container">
+            <a href="heriz.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Back to Collection
+            </a>
+
+            <div class="preview-grid" id="product-content">
+                <!-- Content will be populated by JS -->
+                <div class="preview-image-container">
+                    <img id="p-image" src="" alt="Product Image">
+                </div>
+
+                <div class="preview-details">
+                    <p class="preview-eyebrow">Heriz Collection</p>
+                    <h1 class="preview-title" id="p-title">Loading...</h1>
+                    <p class="preview-desc" id="p-desc">
+                        Hand-knotted with precision, this masterpiece reflects the rich heritage of Heriz weaving
+                        traditions.
+                    </p>
+
+                    <div class="spec-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Origin</span>
+                            <span class="spec-value">Persian Azerbaijan</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Material</span>
+                            <span class="spec-value">Hand-spun Wool on Cotton</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Dye</span>
+                            <span class="spec-value">Natural Vegetable Dyes</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Knot Density</span>
+                            <span class="spec-value">High (Master Weaver Quality)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Availability</span>
+                            <span class="spec-value">Bespoke / Ready to Ship</span>
+                        </div>
+                    </div>
+
+                    <div class="enquiry-box">
+                        <h3>Enquire About This Rug</h3>
+                        <form class="contact-form" id="preview-form">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea rows="4" placeholder="I am interested in the size and price of this Heriz rug..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">SEND ENQUIRY</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-minimal section-padding bg-light" style="margin-top: 80px; padding: 40px 0;">
+        <div class="container text-center">
+            <p class="text-sm text-gray">Copyright &copy; 2025 Faraz Creation - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const products = {
+            'heriz-one': {
+                title: 'Heriz Classic Red',
+                image: './images/heriz_collection_faraz/heriz_one.jpeg.jpeg',
+                desc: 'A stunning example of traditional Heriz design, featuring a bold central medallion on a rich terracotta field with navy blue corners.'
+            },
+            'heriz-two': {
+                title: 'Heriz Antique Medallion',
+                image: './images/heriz_collection_faraz/heriz_two.jpeg.jpeg',
+                desc: 'This antique-style masterpiece showcases intricate floral patterns within its geometric borders, using rare ivory and soft indigo dyes.'
+            },
+            'heriz-three': {
+                title: 'Rust Medallion Heriz',
+                image: './images/heriz_collection_faraz/heriz_three.jpeg.jpeg',
+                desc: 'A tribal-inspired piece with a powerful rust-toned field. The high-contrast geometric motifs make it a perfect centerpiece for any room.'
+            },
+            'heriz-four': {
+                title: 'Heritage Heriz Crimson',
+                image: './images/heriz_collection_faraz/heriz_four.jpeg.jpeg',
+                desc: 'Crafted with hand-spun wool, this crimson-dominated rug offers exceptional durability and a timeless aesthetic that matures with age.'
+            },
+            'heriz-five': {
+                title: 'Grand Heriz Medallion',
+                image: './images/heriz_collection_faraz/heriz_five.jpeg.jpeg',
+                desc: 'Designed for grand spaces, this rug features an oversized medallion and complex double borders in traditional Persian color palettes.'
+            },
+            'heriz-six': {
+                title: 'Village Heriz Rug',
+                image: './images/heriz_collection_faraz/heriz_six.jpeg.jpeg',
+                desc: 'Capturing the rustic charm of village weaving, this rug uses bold, simplified geometric patterns and vibrant natural dyes.'
+            },
+            'heriz-seven': {
+                title: 'Antique Ivory Heriz',
+                image: './images/heriz_collection_faraz/heriz_seven.jpeg.jpeg',
+                desc: 'A rare find featuring significant ivory areas that highlight the earthy tones and geometric precision of the master weavers.'
+            },
+            'heriz-eight': {
+                title: 'Heriz Star Medallion',
+                image: './images/heriz_collection_faraz/heriz_eight.jpeg.jpeg',
+                desc: 'Distinguished by its unique star-shaped central medallion, this piece is a work of art that blends tradition with unique artistic expression.'
+            },
+            'heriz-nine': {
+                title: 'Timeless Heriz Blue',
+                image: './images/heriz_collection_faraz/heriz_nine.jpeg.jpeg',
+                desc: 'A sophisticated palette of navy blue and deep indigo highlights the terracotta geometry, offering a cooler alternative to traditional designs.'
+            },
+            'heriz-ten': {
+                title: 'Earthy Heriz Weaver',
+                image: './images/heriz_collection_faraz/heriz_ten.jpeg.jpeg',
+                desc: 'Muted earth tones and a robust weave make this rug both a beautiful decorative piece and an incredibly durable floor covering.'
+            },
+            'heriz-eleven': {
+                title: 'Majestic Heriz Palace',
+                image: './images/heriz_collection_faraz/heriz_eleven.jpeg.jpeg',
+                desc: 'The ultimate luxury rug, designed with a massive scale and rich detail suitable for the most prestigious palace-style interiors.'
+            }
+        };
+
+        function init() {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('product');
+            const product = products[id];
+
+            if (product) {
+                document.getElementById('p-title').textContent = product.title;
+                document.getElementById('p-image').src = product.image;
+                document.getElementById('p-image').alt = product.title;
+                document.getElementById('p-desc').textContent = product.desc;
+                document.title = product.title + " - Faraz Collection";
+            } else {
+                document.getElementById('product-content').innerHTML = '<div style="text-align:center; width:100%; padding: 100px 0;"><h2>Product not found</h2><a href="heriz.html" class="btn-primary" style="display:inline-block; margin-top:20px;">Back to Collection</a></div>';
+            }
+        }
+
+        window.onload = init;
+    </script>
+</body>
+
+</html>
