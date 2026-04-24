@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +61,7 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About us</a>
                 <a href="techniques.html">Techniques</a>
-                
+
                 <!-- Mobile Collections Dropdown -->
                 <div class="mobile-dropdown">
                     <button class="mobile-dropbtn">Collections <span>▼</span></button>
@@ -91,14 +92,26 @@
 
     <!-- Hero Section -->
     <section class="hero-minimal" id="hero">
-        <div class="hero-bg-minimal"
-            style="background-image: url('./images/fara_creation.jpg');">
+        <div class="hero-slider" id="hero-slider">
+            <div class="hero-bg-minimal slide active" style="background-image: url('./images/fara_creation.jpg');">
+            </div>
+            <div class="hero-bg-minimal slide" style="background-image: url('./images/faraz_creation_banner.jpeg');">
+            </div>
+            <div class="hero-bg-minimal slide" style="background-image: url('./images/fara_creation_banner.jpeg');">
+            </div>
+            <div class="hero-bg-minimal slide" style="background-image: url('./images/isfahan_rugs.jpg');"></div>
+            <div class="hero-bg-minimal slide" style="background-image: url('./images/red_tabriz.jpg');"></div>
+            <div class="hero-bg-minimal slide" style="background-image: url('./images/ushak_rugs.jpg');"></div>
         </div>
         <div class="hero-overlay-minimal"></div>
 
+        <button class="slider-btn prev-btn" aria-label="Previous Slide">❮</button>
+        <button class="slider-btn next-btn" aria-label="Next Slide">❯</button>
+
         <div class="hero-content-minimal">
 
-            <h1 class="hero-title-minimal">FARAZ CREATION <br> <span class="hero-subtitle-glow"><span class="hero-subtitle-minimal">HANDMADE</span></span></h1>
+            <h1 class="hero-title-minimal">FARAZ CREATION <br> <span class="hero-subtitle-glow"><span
+                        class="hero-subtitle-minimal">HANDMADE</span></span></h1>
             <div class="hero-divider"></div>
             <p class="hero-quote">"A Legacy of Excellence in Every Knot."</p>
         </div>
@@ -116,59 +129,44 @@
 
             <div class="grid-4 collection-grid">
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/shiraz_rugs.jpg"
-                            alt="Shiraz Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/shiraz_rugs.jpg" alt="Shiraz Rug" loading="lazy"></div>
                     <p class="product-name">Shiraz</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/kasan_rugs.jpg"
-                            alt="Kashan Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/kasan_rugs.jpg" alt="Kashan Rug" loading="lazy"></div>
                     <p class="product-name">Kashan</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/isfahan_rugs.jpg"
-                            alt="Isfahan Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/isfahan_rugs.jpg" alt="Isfahan Rug" loading="lazy">
+                    </div>
                     <p class="product-name">Isfahan</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/red_tabriz.jpg"
-                            alt="Tabriz Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/red_tabriz.jpg" alt="Tabriz Rug" loading="lazy"></div>
                     <p class="product-name">Tabriz</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
                 <!-- Row 2 -->
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/ushak_rugs.jpg"
-                            alt="Oushak Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/ushak_rugs.jpg" alt="Oushak Rug" loading="lazy"></div>
                     <p class="product-name">Oushak</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/herig_rugs.jpg"
-                            alt="Heriz Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/herig_rugs.jpg" alt="Heriz Rug" loading="lazy"></div>
                     <p class="product-name">Heriz</p>
                     <button class="btn-outline" onclick="window.location.href='heriz.html'">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/gabbeh_rugs.jpg"
-                            alt="Gabbeh Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/gabbeh_rugs.jpg" alt="Gabbeh Rug" loading="lazy"></div>
                     <p class="product-name">Gabbeh</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img
-                            src="./images/kilim_rugs.jpg"
-                            alt="Kilim Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/kilim_rugs.jpg" alt="Kilim Rug" loading="lazy"></div>
                     <p class="product-name">Kilim</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
@@ -184,18 +182,15 @@
             <h3 class="section-title-sm mb-4">Shop By Room</h3>
             <div class="grid-3 room-grid">
                 <div class="room-card">
-                    <img src="./images/faraz_handmade_bedroom.webp"
-                        alt="Bedroom Interior" loading="lazy">
+                    <img src="./images/faraz_handmade_bedroom.webp" alt="Bedroom Interior" loading="lazy">
                     <h4 class="room-name">Bedroom</h4>
                 </div>
                 <div class="room-card">
-                    <img src="./images/faraz_dinning_handmade.jpg"
-                        alt="Dining Room Interior" loading="lazy">
+                    <img src="./images/faraz_dinning_handmade.jpg" alt="Dining Room Interior" loading="lazy">
                     <h4 class="room-name">Dining Room</h4>
                 </div>
                 <div class="room-card">
-                    <img src="./images/living_room_faraz_handmade.jpg"
-                        alt="Living Room Interior" loading="lazy">
+                    <img src="./images/living_room_faraz_handmade.jpg" alt="Living Room Interior" loading="lazy">
                     <h4 class="room-name">Living Room</h4>
                 </div>
             </div>
@@ -224,23 +219,19 @@
 
             <div class="grid-4 surface-grid">
                 <div class="surface-card">
-                    <img src="./images/dark_woods.jpg"
-                        alt="Dark Woods Surface" loading="lazy">
+                    <img src="./images/dark_woods.jpg" alt="Dark Woods Surface" loading="lazy">
                     <div class="surface-label">Dark Woods</div>
                 </div>
                 <div class="surface-card">
-                    <img src="./images/warm_tone_rugs.jpg"
-                        alt="Warm Tones Surface" loading="lazy">
+                    <img src="./images/warm_tone_rugs.jpg" alt="Warm Tones Surface" loading="lazy">
                     <div class="surface-label">Warm Tones</div>
                 </div>
                 <div class="surface-card">
-                    <img src="./images/cool_palettes_rugs.jpg"
-                        alt="Cool Palettes Surface" loading="lazy">
+                    <img src="./images/cool_palettes_rugs.jpg" alt="Cool Palettes Surface" loading="lazy">
                     <div class="surface-label">Cool Palettes</div>
                 </div>
                 <div class="surface-card">
-                    <img src="./images/Patterns_rugs.jpg"
-                        alt="Patterns Surface" loading="lazy">
+                    <img src="./images/Patterns_rugs.jpg" alt="Patterns Surface" loading="lazy">
                     <div class="surface-label">Patterns</div>
                 </div>
             </div>
@@ -253,27 +244,23 @@
 
             <div class="grid-4 style-grid">
                 <div class="product-card text-center">
-                    <div class="img-wrapper style-img"><img
-                            src="./images/Vintage_rugs.webp"
-                            alt="Vintage Style Rug" loading="lazy"></div>
+                    <div class="img-wrapper style-img"><img src="./images/Vintage_rugs.webp" alt="Vintage Style Rug"
+                            loading="lazy"></div>
                     <p class="product-name font-bold">Vintage</p>
                 </div>
                 <div class="product-card text-center">
-                    <div class="img-wrapper style-img"><img
-                            src="./images/turkish_persian.jpg"
-                            alt="Turkish Persian Rug" loading="lazy"></div>
+                    <div class="img-wrapper style-img"><img src="./images/turkish_persian.jpg" alt="Turkish Persian Rug"
+                            loading="lazy"></div>
                     <p class="product-name font-bold">Turkish Persian</p>
                 </div>
                 <div class="product-card text-center">
-                    <div class="img-wrapper style-img"><img
-                            src="./images/moroccan_rugs.avif"
-                            alt="Moroccan Style Rug" loading="lazy"></div>
+                    <div class="img-wrapper style-img"><img src="./images/moroccan_rugs.avif" alt="Moroccan Style Rug"
+                            loading="lazy"></div>
                     <p class="product-name font-bold">Moroccan</p>
                 </div>
                 <div class="product-card text-center">
-                    <div class="img-wrapper style-img"><img
-                            src="./images/oriental_rugs.webp"
-                            alt="Oriental Style Rug" loading="lazy"></div>
+                    <div class="img-wrapper style-img"><img src="./images/oriental_rugs.webp" alt="Oriental Style Rug"
+                            loading="lazy"></div>
                     <p class="product-name font-bold">Oriental</p>
                 </div>
             </div>
@@ -289,8 +276,7 @@
             </div>
             <div class="heritage-content flex-row">
                 <div class="heritage-img">
-                    <img src="./images/our_heritage_faraz_rugs.jpg"
-                        alt="Master Craftsmen at Work" loading="lazy">
+                    <img src="./images/our_heritage_faraz_rugs.jpg" alt="Master Craftsmen at Work" loading="lazy">
                 </div>
                 <div class="heritage-text">
                     <p>At Faraz Carpets, we take pride in a legacy built on craftsmanship, culture, and tradition...
@@ -313,8 +299,7 @@
             <div class="grid-3 text-center">
                 <div class="commitment-card">
                     <div class="circle-img">
-                        <img src="./images/quality_assurance_faraz.jpg"
-                            alt="Quality Selection" loading="lazy">
+                        <img src="./images/quality_assurance_faraz.jpg" alt="Quality Selection" loading="lazy">
                     </div>
                     <h4>Quality Assurance</h4>
                     <p>At Faraz Carpets, quality assurance is paramount. We ensure that our in-house master artisans
@@ -322,8 +307,7 @@
                 </div>
                 <div class="commitment-card">
                     <div class="circle-img">
-                        <img src="./images/timely_delivery_faraz.png"
-                            alt="Secure Logistics" loading="lazy">
+                        <img src="./images/timely_delivery_faraz.png" alt="Secure Logistics" loading="lazy">
                     </div>
                     <h4>Timely Delivery</h4>
                     <p>We understand the importance of timely delivery at Faraz Carpets. Our efficient logistics ensure
@@ -331,8 +315,7 @@
                 </div>
                 <div class="commitment-card">
                     <div class="circle-img">
-                        <img src="./images/after_sales_support_faraz.jpeg"
-                            alt="Customer Care" loading="lazy">
+                        <img src="./images/after_sales_support_faraz.jpeg" alt="Customer Care" loading="lazy">
                     </div>
                     <h4>After-Sales Support</h4>
                     <p>Our relationship with customers is our top priority here. Faraz Carpets team offers comprehensive
@@ -347,12 +330,12 @@
         <div class="consultation-bg">
             <div class="consultation-content text-center">
                 <h2>Book Your Free<br>Design Consultation</h2>
-                <button class="btn-outline-light mt-3" id="book-now-btn" onclick="window.location.href='contact.html'">BOOK NOW</button>
+                <button class="btn-outline-light mt-3" id="book-now-btn"
+                    onclick="window.location.href='contact.html'">BOOK NOW</button>
             </div>
         </div>
         <div class="consultation-img">
-            <img src="./images/design_consultation_faraz.jpg"
-                alt="Design Consultation Interior" loading="lazy">
+            <img src="./images/design_consultation_faraz.jpg" alt="Design Consultation Interior" loading="lazy">
         </div>
     </section>
 
@@ -474,6 +457,47 @@
             el.classList.add('reveal-on-scroll');
             observer.observe(el);
         });
+
+        // Hero Slider
+        const slides = document.querySelectorAll('.hero-bg-minimal.slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        if (slides.length > 0) {
+            let currentSlide = 0;
+            let slideInterval;
+
+            const nextSlide = () => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            };
+
+            const prevSlide = () => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+            };
+
+            const startInterval = () => {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 10000);
+            };
+
+            if (nextBtn && prevBtn) {
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    startInterval();
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    startInterval();
+                });
+            }
+
+            startInterval();
+        }
     </script>
 
 </body>
