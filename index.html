@@ -37,10 +37,7 @@
 
             <nav class="nav-right">
                 <div class="dropdown">
-                    <a href="#" class="dropbtn">Collections <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
-                            stroke="currentColor">
-                            <path d="M1 1L5 5L9 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></a>
+                    <a href="#" class="dropbtn">Collections <span class="menu-chevron" aria-hidden="true"></span></a>
                     <div class="dropdown-content">
                         <a href="#collection">Shiraz</a>
                         <a href="#collection">Kashan</a>
@@ -64,7 +61,8 @@
 
                 <!-- Mobile Collections Dropdown -->
                 <div class="mobile-dropdown">
-                    <button class="mobile-dropbtn">Collections <span>▼</span></button>
+                    <button class="mobile-dropbtn">Collections <span class="menu-chevron"
+                            aria-hidden="true"></span></button>
                     <div class="mobile-dropdown-content">
                         <a href="#collection">Shiraz</a>
                         <a href="#collection">Kashan</a>
@@ -93,15 +91,27 @@
     <!-- Hero Section -->
     <section class="hero-minimal" id="hero">
         <div class="hero-slider" id="hero-slider">
-            <div class="hero-bg-minimal slide active" style="background-image: url('./images/fara_creation.jpg');">
+            <div class="hero-bg-minimal slide active"
+                style="background-image: url('./images/hero_banner/fara_creation.jpg');">
             </div>
-            <div class="hero-bg-minimal slide" style="background-image: url('./images/faraz_creation_banner.jpeg');">
+            <div class="hero-bg-minimal slide"
+                style="background-image: url('./images/hero_banner/fara_creation_banner.jpg');">
             </div>
-            <div class="hero-bg-minimal slide" style="background-image: url('./images/fara_creation_banner.jpeg');">
+            <div class="hero-bg-minimal slide"
+                style="background-image: url('./images/hero_banner/faraz_creation_banner.jpg');">
             </div>
-            <div class="hero-bg-minimal slide" style="background-image: url('./images/isfahan_rugs.jpg');"></div>
-            <div class="hero-bg-minimal slide" style="background-image: url('./images/red_tabriz.jpg');"></div>
-            <div class="hero-bg-minimal slide" style="background-image: url('./images/ushak_rugs.jpg');"></div>
+            <div class="hero-bg-minimal slide"
+                style="background-image: url('./images/hero_banner/faraz_creation_banner_five.jpg');">
+            </div>
+            <div class="hero-bg-minimal slide"
+                style="background-image: url('./images/hero_banner/faraz_creation_banner_four.jpg');">
+            </div>
+            <div class="hero-bg-minimal slide"
+                style="background-image: url('./images/hero_banner/faraz_creation_banner_six.jpg');">
+            </div>
+            <div class="hero-bg-minimal slide"
+                style="background-image: url('./images/hero_banner/faraz_creation_banner_three.jpg');">
+            </div>
         </div>
         <div class="hero-overlay-minimal"></div>
 
@@ -466,6 +476,10 @@
         if (slides.length > 0) {
             let currentSlide = 0;
             let slideInterval;
+
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
 
             const nextSlide = () => {
                 slides[currentSlide].classList.remove('active');

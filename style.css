@@ -490,8 +490,25 @@ button {
 .dropbtn {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     cursor: pointer;
+}
+
+.menu-chevron {
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    display: inline-block;
+    transform: translateY(-2px) rotate(45deg);
+    transform-origin: 65% 65%;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    opacity: 0.8;
+}
+
+.dropdown:hover .menu-chevron {
+    transform: translateY(1px) rotate(225deg);
+    opacity: 1;
 }
 
 .dropdown-content {
@@ -1530,9 +1547,10 @@ button {
         cursor: pointer;
     }
 
-    .mobile-dropbtn span {
-        font-size: 0.7rem;
-        transition: transform 0.3s ease;
+    .mobile-dropbtn .menu-chevron {
+        width: 8px;
+        height: 8px;
+        transform: translateY(-2px) rotate(45deg);
     }
 
     .mobile-dropdown-content {
@@ -1549,8 +1567,8 @@ button {
         display: flex;
     }
 
-    .mobile-dropdown.active .mobile-dropbtn span {
-        transform: rotate(180deg);
+    .mobile-dropdown.active .mobile-dropbtn .menu-chevron {
+        transform: translateY(2px) rotate(225deg);
     }
 
     .mobile-dropdown-content a {
@@ -3707,7 +3725,7 @@ button {
 }
 
 /* Laptop/1366px Specific Adjustments to make content slightly smaller */
-@media (max-width: 1400px) {
+@media (min-width: 769px) and (max-width: 1400px) {
     html {
         font-size: 14px;
         /* Scales down all rem-based sizes by ~12.5% */
