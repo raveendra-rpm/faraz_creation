@@ -379,7 +379,27 @@
             'oushak-twentyfour': { title: 'Oushak Antique Sage', image: './images/oushak_collection_faraz/oshak_col_twentyfour.jpeg', desc: 'Distressed green and ivory.' },
             'oushak-twentyfive': { title: 'Oushak Crimson Royale', image: './images/oushak_collection_faraz/oshak_col_twentyfive.jpeg', desc: 'Deep red with classic Oushak geometry.' },
             'oushak-twentysix': { title: 'Oushak Classic Ivory II', image: './images/oushak_collection_faraz/oshak_col_twentysix.jpeg', desc: 'Elegant ivory field with soft motifs.' },
-            'oushak-twentyseven': { title: 'Oushak Golden Heritage II', image: './images/oushak_collection_faraz/oshak_col_twentyseven.jpeg', desc: 'Muted gold tones, timeless design.' }
+            'oushak-twentyseven': { title: 'Oushak Golden Heritage II', image: './images/oushak_collection_faraz/oshak_col_twentyseven.jpeg', desc: 'Muted gold tones, timeless design.' },
+            'tabriz-1': { title: 'Tabriz Royal Medallion', image: './images/tabriz_collection_faraz/tabriz_collection_one.jpeg', desc: 'Classic red field with intricate floral borders.' },
+            'tabriz-2': { title: 'Antique Floral Tabriz', image: './images/tabriz_collection_faraz/tabriz_collection_two.jpeg', desc: 'Muted tones with traditional garden motifs.' },
+            'tabriz-3': { title: 'Tabriz Silk Heritage', image: './images/tabriz_collection_faraz/tabriz_collection_three.jpeg', desc: 'High knot density with silk highlights.' },
+            'tabriz-4': { title: 'Modern Tabriz Pearl', image: './images/tabriz_collection_faraz/tabriz_collection_four.jpeg', desc: 'Soft cream and silver floral patterns.' },
+            'tabriz-5': { title: 'Golden Tabriz Medallion', image: './images/tabriz_collection_faraz/tabriz_collection_five.jpeg', desc: 'Rich gold and ivory intricate patterns.' },
+            'tabriz-6': { title: 'Vintage Indigo Tabriz', image: './images/tabriz_collection_faraz/tabriz_collection_six.jpeg', desc: 'Deep blue field with classic motifs.' },
+            'tabriz-7': { title: 'Tabriz Rose Garden', image: './images/tabriz_collection_faraz/tabriz_collection_seven.jpeg', desc: 'Soft pink and sage floral details.' },
+            'tabriz-8': { title: 'Tabriz Imperial Crimson', image: './images/tabriz_collection_faraz/tabriz_collection_eight.jpeg', desc: 'Majestic red with grand medallion.' },
+            'tabriz-9': { title: 'Tabriz Azure Dream', image: './images/tabriz_collection_faraz/tabriz_collection_nine.jpeg', desc: 'Luminous blue and cream patterns.' },
+            'tabriz-10': { title: 'Tabriz Sand Heritage', image: './images/tabriz_collection_faraz/tabriz_collection_ten.jpeg', desc: 'Earthy tones with fine knotting.' },
+            'tabriz-11': { title: 'Tabriz Midnight Floral', image: './images/tabriz_collection_faraz/tabriz_collection_eleven.jpeg', desc: 'Dark field with vibrant floral accents.' },
+            'tabriz-12': { title: 'Tabriz Ivory Palace', image: './images/tabriz_collection_faraz/tabriz_collection_twelve.jpeg', desc: 'Elegant ivory field, timeless design.' },
+            'tabriz-13': { title: 'Tabriz Forest Medallion', image: './images/tabriz_collection_faraz/tabriz_collection_thirteen.jpeg', desc: 'Deep green and bronze intricate motifs.' },
+            'tabriz-14': { title: 'Tabriz Sunset Glow', image: './images/tabriz_collection_faraz/tabriz_collection_fourteen.jpeg', desc: 'Warm orange and terracotta palette.' },
+            'tabriz-15': { title: 'Tabriz Silver Mist', image: './images/tabriz_collection_faraz/tabriz_collection_fifteen.jpeg', desc: 'Modern gray tones with classic geometry.' },
+            'tabriz-16': { title: 'Tabriz Bronze Heritage', image: './images/tabriz_collection_faraz/tabriz_collection_sixteen.jpeg', desc: 'Rich bronze and cream detailed borders.' },
+            'tabriz-17': { title: 'Tabriz Ruby Medallion', image: './images/tabriz_collection_faraz/tabriz_collection_seventeen.jpeg', desc: 'Deep ruby field with silk detailing.' },
+            'tabriz-18': { title: 'Tabriz Ocean Breeze', image: './images/tabriz_collection_faraz/tabriz_collection_eighteen.jpeg', desc: 'Cool turquoise and ivory patterns.' },
+            'tabriz-19': { title: 'Tabriz Golden Oasis', image: './images/tabriz_collection_faraz/tabriz_collection_nineteen.jpeg', desc: 'Warm gold tones with intricate floral maps.' },
+            'tabriz-20': { title: 'Tabriz Antique Pearl', image: './images/tabriz_collection_faraz/tabriz_collection_twenty.jpeg', desc: 'Distressed cream and sage classic motifs.' }
         };
 
         function init() {
@@ -395,6 +415,7 @@
                 document.title = product.title + " - Faraz Collection";
                 
                 const isOushak = id.startsWith('oushak');
+                const isTabriz = id.startsWith('tabriz');
                 const eyebrow = document.querySelector('.preview-eyebrow');
                 const backLink = document.querySelector('.back-link');
                 const textarea = document.querySelector('.enquiry-box textarea');
@@ -409,6 +430,16 @@
                         Back to Collection
                     `;
                     textarea.placeholder = "I am interested in the size and price of this Oushak rug...";
+                } else if (isTabriz) {
+                    eyebrow.textContent = 'Tabriz Collection';
+                    backLink.href = 'tabriz.html';
+                    backLink.innerHTML = `
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                        Back to Collection
+                    `;
+                    textarea.placeholder = "I am interested in the size and price of this Tabriz rug...";
                 } else {
                     eyebrow.textContent = 'Heriz Collection';
                     backLink.href = 'heriz.html';
