@@ -171,7 +171,7 @@
                             <path d="M1 1L5 5L9 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg></a>
                     <div class="dropdown-content">
-                        <a href="index.html#collection">Shiraz</a>
+                        <a href="shiraz.html">Shiraz</a>
                         <a href="index.html#collection">Kashan</a>
                         <a href="index.html#collection">Isfahan</a>
                         <a href="index.html#collection">Tabriz</a>
@@ -198,7 +198,7 @@
                         </svg>
                     </button>
                     <div class="mobile-dropdown-content">
-                        <a href="index.html#collection">Shiraz</a>
+                        <a href="shiraz.html">Shiraz</a>
                         <a href="index.html#collection">Kashan</a>
                         <a href="index.html#collection">Isfahan</a>
                         <a href="index.html#collection">Tabriz</a>
@@ -399,7 +399,23 @@
             'tabriz-17': { title: 'Tabriz Ruby Medallion', image: './images/tabriz_collection_faraz/tabriz_collection_seventeen.jpeg', desc: 'Deep ruby field with silk detailing.' },
             'tabriz-18': { title: 'Tabriz Ocean Breeze', image: './images/tabriz_collection_faraz/tabriz_collection_eighteen.jpeg', desc: 'Cool turquoise and ivory patterns.' },
             'tabriz-19': { title: 'Tabriz Golden Oasis', image: './images/tabriz_collection_faraz/tabriz_collection_nineteen.jpeg', desc: 'Warm gold tones with intricate floral maps.' },
-            'tabriz-20': { title: 'Tabriz Antique Pearl', image: './images/tabriz_collection_faraz/tabriz_collection_twenty.jpeg', desc: 'Distressed cream and sage classic motifs.' }
+            'tabriz-20': { title: 'Tabriz Antique Pearl', image: './images/tabriz_collection_faraz/tabriz_collection_twenty.jpeg', desc: 'Distressed cream and sage classic motifs.' },
+            'shiraz-one': { title: 'Shiraz Tribal Medallion', image: './images/shiraz_collection_faraz/shiraz_faraz_one.jpeg', desc: 'Authentic nomadic motifs in deep red.' },
+            'shiraz-two': { title: 'Nomadic Diamond Shiraz', image: './images/shiraz_collection_faraz/shiraz_faraz_two.jpeg', desc: 'Geometric diamond patterns.' },
+            'shiraz-three': { title: 'Shiraz Heritage Crimson', image: './images/shiraz_collection_faraz/shiraz_faraz_three.jpeg', desc: 'Traditional Qashqai inspired design.' },
+            'shiraz-four': { title: 'Shiraz Earth Tones', image: './images/shiraz_collection_faraz/shiraz_faraz_four.jpeg', desc: 'Natural dyes and hand-spun wool.' },
+            'shiraz-five': { title: 'Grand Shiraz Qashqai', image: './images/shiraz_collection_faraz/shiraz_faraz_five.jpeg', desc: 'Intricate tribal corner details.' },
+            'shiraz-six': { title: 'Village Shiraz Rug', image: './images/shiraz_collection_faraz/shiraz_faraz_six.jpeg', desc: 'Stylized flora and fauna.' },
+            'shiraz-seven': { title: 'Antique Shiraz Red', image: './images/shiraz_collection_faraz/shiraz_faraz_seven.jpeg', desc: 'Rich madder red field.' },
+            'shiraz-eight': { title: 'Shiraz Star Medallion', image: './images/shiraz_collection_faraz/shiraz_faraz_eight.jpeg', desc: 'Distinctive central medallion.' },
+            'shiraz-nine': { title: 'Timeless Shiraz Night', image: './images/shiraz_collection_faraz/shiraz_faraz_nine.jpeg', desc: 'Navy highlights on red field.' },
+            'shiraz-ten': { title: 'Earthy Shiraz Weaver', image: './images/shiraz_collection_faraz/shiraz_faraz_ten.jpeg', desc: 'Rust and blue geometric borders.' },
+            'shiraz-eleven': { title: 'Majestic Shiraz Gallery', image: './images/shiraz_collection_faraz/shiraz_faraz_eleven.jpeg', desc: 'Classic multiple medallion layout.' },
+            'shiraz-twelve': { title: 'Shiraz Tribal Medley', image: './images/shiraz_collection_faraz/shiraz_faraz_twelve.jpeg', desc: 'Eclectic tribal patterns.' },
+            'shiraz-thirteen': { title: 'Shiraz Classic Geometric', image: './images/shiraz_collection_faraz/shiraz_faraz_thirteen.jpeg', desc: 'Rich traditional borders.' },
+            'shiraz-fourteen': { title: 'Shiraz Nomad Star', image: './images/shiraz_collection_faraz/shiraz_faraz_fourteen.jpeg', desc: 'Unique star center motif.' },
+            'shiraz-fifteen': { title: 'Shiraz Boteh Design', image: './images/shiraz_collection_faraz/shiraz_faraz_fifteen.jpeg', desc: 'Classic all-over boteh pattern.' },
+            'shiraz-sixteen': { title: 'Shiraz Qashqai Medallion', image: './images/shiraz_collection_faraz/shiraz_faraz_sixteen.jpeg', desc: 'Bold central medallion and corners.' }
         };
 
         function init() {
@@ -416,6 +432,7 @@
                 
                 const isOushak = id.startsWith('oushak');
                 const isTabriz = id.startsWith('tabriz');
+                const isShiraz = id.startsWith('shiraz');
                 const eyebrow = document.querySelector('.preview-eyebrow');
                 const backLink = document.querySelector('.back-link');
                 const textarea = document.querySelector('.enquiry-box textarea');
@@ -440,6 +457,16 @@
                         Back to Collection
                     `;
                     textarea.placeholder = "I am interested in the size and price of this Tabriz rug...";
+                } else if (isShiraz) {
+                    eyebrow.textContent = 'Shiraz Collection';
+                    backLink.href = 'shiraz.html';
+                    backLink.innerHTML = `
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                        Back to Collection
+                    `;
+                    textarea.placeholder = "I am interested in the size and price of this Shiraz rug...";
                 } else {
                     eyebrow.textContent = 'Heriz Collection';
                     backLink.href = 'heriz.html';
