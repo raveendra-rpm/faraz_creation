@@ -173,7 +173,7 @@
                     <div class="dropdown-content">
                         <a href="shiraz.html">Shiraz</a>
                         <a href="index.html#collection">Kashan</a>
-                        <a href="index.html#collection">Isfahan</a>
+                        <a href="isfahan.html">Isfahan</a>
                         <a href="index.html#collection">Tabriz</a>
                         <a href="oshak.html">Oushak</a>
                         <a href="heriz.html">Heriz</a>
@@ -200,7 +200,7 @@
                     <div class="mobile-dropdown-content">
                         <a href="shiraz.html">Shiraz</a>
                         <a href="index.html#collection">Kashan</a>
-                        <a href="index.html#collection">Isfahan</a>
+                        <a href="isfahan.html">Isfahan</a>
                         <a href="index.html#collection">Tabriz</a>
                         <a href="oshak.html">Oushak</a>
                         <a href="heriz.html">Heriz</a>
@@ -415,7 +415,13 @@
             'shiraz-thirteen': { title: 'Shiraz Classic Geometric', image: './images/shiraz_collection_faraz/shiraz_faraz_thirteen.jpeg', desc: 'Rich traditional borders.' },
             'shiraz-fourteen': { title: 'Shiraz Nomad Star', image: './images/shiraz_collection_faraz/shiraz_faraz_fourteen.jpeg', desc: 'Unique star center motif.' },
             'shiraz-fifteen': { title: 'Shiraz Boteh Design', image: './images/shiraz_collection_faraz/shiraz_faraz_fifteen.jpeg', desc: 'Classic all-over boteh pattern.' },
-            'shiraz-sixteen': { title: 'Shiraz Qashqai Medallion', image: './images/shiraz_collection_faraz/shiraz_faraz_sixteen.jpeg', desc: 'Bold central medallion and corners.' }
+            'shiraz-sixteen': { title: 'Shiraz Qashqai Medallion', image: './images/shiraz_collection_faraz/shiraz_faraz_sixteen.jpeg', desc: 'Bold central medallion and corners.' },
+            'isfahan-1': { title: 'Isfahan Royal Silk', image: './images/isfahan_collection_faraz/isfahan_col_one.jpeg', desc: 'Exquisite detail with traditional motifs.' },
+            'isfahan-2': { title: 'Isfahan Imperial Medallion', image: './images/isfahan_collection_faraz/isfahan_col_two.jpeg', desc: 'Elegant central medallion on a light field.' },
+            'isfahan-3': { title: 'Classic Isfahan Blossom', image: './images/isfahan_collection_faraz/isfahan_col_three.jpeg', desc: 'Intricate floral arabesques and vines.' },
+            'isfahan-4': { title: 'Isfahan Heritage Garden', image: './images/isfahan_collection_faraz/isfahan_col_four.jpeg', desc: 'Rich colors and masterful weaving.' },
+            'isfahan-5': { title: 'Isfahan Antique Ivory', image: './images/isfahan_collection_faraz/isfahan_col_five.jpeg', desc: 'Subtle ivory ground with delicate patterns.' },
+            'isfahan-6': { title: 'Isfahan Majestic Floral', image: './images/isfahan_collection_faraz/isfahan_col_six.jpeg', desc: 'Vibrant and densely knotted design.' }
         };
 
         function init() {
@@ -433,11 +439,22 @@
                 const isOushak = id.startsWith('oushak');
                 const isTabriz = id.startsWith('tabriz');
                 const isShiraz = id.startsWith('shiraz');
+                const isIsfahan = id.startsWith('isfahan');
                 const eyebrow = document.querySelector('.preview-eyebrow');
                 const backLink = document.querySelector('.back-link');
                 const textarea = document.querySelector('.enquiry-box textarea');
                 
-                if (isOushak) {
+                if (isIsfahan) {
+                    eyebrow.textContent = 'Isfahan Collection';
+                    backLink.href = 'isfahan.html';
+                    backLink.innerHTML = `
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                        Back to Collection
+                    `;
+                    textarea.placeholder = "I am interested in the size and price of this Isfahan rug...";
+                } else if (isOushak) {
                     eyebrow.textContent = 'Oushak Collection';
                     backLink.href = 'oshak.html';
                     backLink.innerHTML = `
@@ -502,3 +519,4 @@
 </body>
 
 </html>
+
