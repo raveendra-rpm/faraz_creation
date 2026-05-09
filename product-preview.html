@@ -193,9 +193,10 @@
                 <a href="techniques.html">Techniques</a>
 
                 <div class="mobile-dropdown">
-                    <button class="mobile-dropbtn">Collections 
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M1 1l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <button class="mobile-dropbtn">Collections
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M1 1l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
                     <div class="mobile-dropdown-content">
@@ -282,9 +283,11 @@
                             </div>
                             <div class="form-group">
                                 <label>Message *</label>
-                                <textarea rows="4" placeholder="I am interested in the size and price of this Heriz rug..."></textarea>
+                                <textarea rows="4"
+                                    placeholder="I am interested in the size and price of this Heriz rug..."></textarea>
                             </div>
-                            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">SEND ENQUIRY</button>
+                            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">SEND
+                                ENQUIRY</button>
                         </form>
                     </div>
                 </div>
@@ -459,7 +462,7 @@
                 document.getElementById('p-image').alt = product.title;
                 document.getElementById('p-desc').textContent = product.desc;
                 document.title = product.title + " - Faraz Collection";
-                
+
                 const isOushak = id.startsWith('oushak');
                 const isTabriz = id.startsWith('tabriz');
                 const isShiraz = id.startsWith('shiraz');
@@ -468,7 +471,7 @@
                 const eyebrow = document.querySelector('.preview-eyebrow');
                 const backLink = document.querySelector('.back-link');
                 const textarea = document.querySelector('.enquiry-box textarea');
-                
+
                 if (isIsfan) {
                     eyebrow.textContent = 'Isfan Collection';
                     backLink.href = 'isfan.html';
@@ -554,4 +557,3 @@
 </body>
 
 </html>
-
