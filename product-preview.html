@@ -179,6 +179,7 @@
                         <a href="heriz.html">Heriz</a>
                         <a href="index.html#collection">Gabbeh</a>
                         <a href="index.html#collection">Kilim</a>
+                        <a href="isfan.html">Isfan</a>
                     </div>
                 </div>
                 <a href="contact.html">Contact Us</a>
@@ -206,6 +207,7 @@
                         <a href="heriz.html">Heriz</a>
                         <a href="index.html#collection">Gabbeh</a>
                         <a href="index.html#collection">Kilim</a>
+                        <a href="isfan.html">Isfan</a>
                     </div>
                 </div>
 
@@ -421,7 +423,29 @@
             'isfahan-3': { title: 'Classic Isfahan Blossom', image: './images/isfahan_collection_faraz/isfahan_col_three.jpeg', desc: 'Intricate floral arabesques and vines.' },
             'isfahan-4': { title: 'Isfahan Heritage Garden', image: './images/isfahan_collection_faraz/isfahan_col_four.jpeg', desc: 'Rich colors and masterful weaving.' },
             'isfahan-5': { title: 'Isfahan Antique Ivory', image: './images/isfahan_collection_faraz/isfahan_col_five.jpeg', desc: 'Subtle ivory ground with delicate patterns.' },
-            'isfahan-6': { title: 'Isfahan Majestic Floral', image: './images/isfahan_collection_faraz/isfahan_col_six.jpeg', desc: 'Vibrant and densely knotted design.' }
+            'isfahan-6': { title: 'Isfahan Majestic Floral', image: './images/isfahan_collection_faraz/isfahan_col_six.jpeg', desc: 'Vibrant and densely knotted design.' },
+            'isfahan-7': { title: 'Isfahan Timeless Seven', image: './images/isfahan_collection_faraz/isfahan_col_seven.jpeg', desc: 'Classic Isfahan style.' },
+            'isfahan-8': { title: 'Isfahan Imperial Eight', image: './images/isfahan_collection_faraz/isfahan_col_eight.jpeg', desc: 'Rich and bold motifs.' },
+            'isfahan-9': { title: 'Isfahan Grand Nine', image: './images/isfahan_collection_faraz/isfahan_col_nine.jpeg', desc: 'Elegant traditional motifs.' },
+            'isfahan-10': { title: 'Isfahan Vintage Ten', image: './images/isfahan_collection_faraz/isfahan_col_ten.jpeg', desc: 'Stunning vintage details.' },
+            'isfahan-11': { title: 'Isfahan Majestic Eleven', image: './images/isfahan_collection_faraz/isfahan_col_eleven.jpeg', desc: 'Exquisite detail and clarity.' },
+            'isfahan-12': { title: 'Isfahan Classic Twelve', image: './images/isfahan_collection_faraz/isfahan_col_twelve.jpeg', desc: 'Finely woven silk accents.' },
+            'isfahan-13': { title: 'Isfahan Royal Thirteen', image: './images/isfahan_collection_faraz/isfahan_col_thirteen.jpeg', desc: 'Beautiful arabesque vines.' },
+            'isfahan-14': { title: 'Isfahan Blossom Fourteen', image: './images/isfahan_collection_faraz/isfahan_col_fourteen.jpeg', desc: 'Vibrant floral palette.' },
+            'isfahan-15': { title: 'Isfahan Antique Fifteen', image: './images/isfahan_collection_faraz/isfahan_col_fifteen.jpeg', desc: 'Time-honored artistic heritage.' },
+            'isfahan-16': { title: 'Isfahan Elegance Sixteen', image: './images/isfahan_collection_faraz/isfahan_col_sixteen.jpeg', desc: 'Perfect symmetry and balance.' },
+            'isfahan-17': { title: 'Isfahan Heritage Seventeen', image: './images/isfahan_collection_faraz/isfahan_col_seventeen.jpeg', desc: 'Subtle grace and harmony.' },
+            'isfan-one': { title: 'Isfan Classic One', image: './images/Isfan_collection_faraz/isfan_col_one.jpeg', desc: 'Elegant traditional motifs.' },
+            'isfan-two': { title: 'Isfan Royal Two', image: './images/Isfan_collection_faraz/isfan_col_two.jpeg', desc: 'Rich and intricate patterns.' },
+            'isfan-three': { title: 'Isfan Majestic Three', image: './images/Isfan_collection_faraz/isfan_col_three.jpeg', desc: 'Bold aesthetic appeal.' },
+            'isfan-four': { title: 'Isfan Heritage Four', image: './images/Isfan_collection_faraz/isfan_col_four.jpeg', desc: 'Subtle and earthy tones.' },
+            'isfan-five': { title: 'Isfan Vintage Five', image: './images/Isfan_collection_faraz/isfan_col_five.jpeg', desc: 'Classic vintage charm.' },
+            'isfan-six': { title: 'Isfan Elegant Six', image: './images/Isfan_collection_faraz/isfan_col_six.jpeg', desc: 'Sophisticated palette.' },
+            'isfan-seven': { title: 'Isfan Antique Seven', image: './images/Isfan_collection_faraz/isfan_col_seven.jpeg', desc: 'Antique distressed finish.' },
+            'isfan-eight': { title: 'Isfan Modern Eight', image: './images/Isfan_collection_faraz/isfan_col_eight.jpeg', desc: 'Contemporary interpretation.' },
+            'isfan-nine': { title: 'Isfan Grand Nine', image: './images/Isfan_collection_faraz/isfan_col_nine.jpeg', desc: 'Oversized decorative details.' },
+            'isfan-ten': { title: 'Isfan Star Ten', image: './images/Isfan_collection_faraz/isfan_col_ten.jpeg', desc: 'Unique central medallion.' },
+            'isfan-eleven': { title: 'Isfan Floral Eleven', image: './images/Isfan_collection_faraz/isfan_col_eleven.jpeg', desc: 'Lush botanical patterns.' }
         };
 
         function init() {
@@ -440,11 +464,22 @@
                 const isTabriz = id.startsWith('tabriz');
                 const isShiraz = id.startsWith('shiraz');
                 const isIsfahan = id.startsWith('isfahan');
+                const isIsfan = id.startsWith('isfan');
                 const eyebrow = document.querySelector('.preview-eyebrow');
                 const backLink = document.querySelector('.back-link');
                 const textarea = document.querySelector('.enquiry-box textarea');
                 
-                if (isIsfahan) {
+                if (isIsfan) {
+                    eyebrow.textContent = 'Isfan Collection';
+                    backLink.href = 'isfan.html';
+                    backLink.innerHTML = `
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                        Back to Collection
+                    `;
+                    textarea.placeholder = "I am interested in the size and price of this Isfan rug...";
+                } else if (isIsfahan) {
                     eyebrow.textContent = 'Isfahan Collection';
                     backLink.href = 'isfahan.html';
                     backLink.innerHTML = `
