@@ -448,7 +448,28 @@
             'isfan-eight': { title: 'Isfan Modern Eight', image: './images/Isfan_collection_faraz/isfan_col_eight.jpeg', desc: 'Contemporary interpretation.' },
             'isfan-nine': { title: 'Isfan Grand Nine', image: './images/Isfan_collection_faraz/isfan_col_nine.jpeg', desc: 'Oversized decorative details.' },
             'isfan-ten': { title: 'Isfan Star Ten', image: './images/Isfan_collection_faraz/isfan_col_ten.jpeg', desc: 'Unique central medallion.' },
-            'isfan-eleven': { title: 'Isfan Floral Eleven', image: './images/Isfan_collection_faraz/isfan_col_eleven.jpeg', desc: 'Lush botanical patterns.' }
+            'isfan-eleven': { title: 'Isfan Floral Eleven', image: './images/Isfan_collection_faraz/isfan_col_eleven.jpeg', desc: 'Lush botanical patterns.' },
+            'kashanport-one': { title: 'Kashan Port One', image: './images/kashanport_collection_faraz/kashanport_one.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-two': { title: 'Kashan Port Two', image: './images/kashanport_collection_faraz/kashanport_two.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-three': { title: 'Kashan Port Three', image: './images/kashanport_collection_faraz/kashanport_three.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-four': { title: 'Kashan Port Four', image: './images/kashanport_collection_faraz/kashanport_four.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-five': { title: 'Kashan Port Five', image: './images/kashanport_collection_faraz/kashanport_five.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-six': { title: 'Kashan Port Six', image: './images/kashanport_collection_faraz/kashanport_six.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-seven': { title: 'Kashan Port Seven', image: './images/kashanport_collection_faraz/kashanport_seven.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-eight': { title: 'Kashan Port Eight', image: './images/kashanport_collection_faraz/kashanport_eight.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-nine': { title: 'Kashan Port Nine', image: './images/kashanport_collection_faraz/kashanport_nine.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-ten': { title: 'Kashan Port Ten', image: './images/kashanport_collection_faraz/kashanport_ten.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-eleven': { title: 'Kashan Port Eleven', image: './images/kashanport_collection_faraz/kashanport_eleven.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-twelve': { title: 'Kashan Port Twelve', image: './images/kashanport_collection_faraz/kashanport_twelve.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-thirteen': { title: 'Kashan Port Thirteen', image: './images/kashanport_collection_faraz/kashanport_thirteen.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-fourteen': { title: 'Kashan Port Fourteen', image: './images/kashanport_collection_faraz/kashanport_fourteen.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-fifteen': { title: 'Kashan Port Fifteen', image: './images/kashanport_collection_faraz/kashanport_fifteen.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-sixteen': { title: 'Kashan Port Sixteen', image: './images/kashanport_collection_faraz/kashanport_sixteen.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-seventeen': { title: 'Kashan Port Seventeen', image: './images/kashanport_collection_faraz/kashanport_seventeen.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-eighteen': { title: 'Kashan Port Eighteen', image: './images/kashanport_collection_faraz/kashanport_eighteen.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-nineteen': { title: 'Kashan Port Nineteen', image: './images/kashanport_collection_faraz/kashanport_nineteen.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-twenty': { title: 'Kashan Port Twenty', image: './images/kashanport_collection_faraz/kashanport_twenty.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' },
+            'kashanport-twentyone': { title: 'Kashan Port Twentyone', image: './images/kashanport_collection_faraz/kashanport_twentyone.jpeg', desc: 'Elegant traditional motifs with masterful weave and vertical presentation.' }
         };
 
         function init() {
@@ -468,11 +489,24 @@
                 const isShiraz = id.startsWith('shiraz');
                 const isIsfahan = id.startsWith('isfahan');
                 const isIsfan = id.startsWith('isfan');
+                const isKashanport = id.startsWith('kashanport');
                 const eyebrow = document.querySelector('.preview-eyebrow');
                 const backLink = document.querySelector('.back-link');
                 const textarea = document.querySelector('.enquiry-box textarea');
 
-                if (isIsfan) {
+                if (isKashanport) {
+                    eyebrow.textContent = 'Kashan Port Collection';
+                    backLink.href = 'kashanport.html';
+                    backLink.innerHTML = `
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                        Back to Collection
+                    `;
+                    textarea.placeholder = "I am interested in the size and price of this Kashan Port rug...";
+                    document.getElementById('p-image').style.aspectRatio = '3/4';
+                    document.getElementById('p-image').style.objectFit = 'cover';
+                } else if (isIsfan) {
                     eyebrow.textContent = 'Isfan Collection';
                     backLink.href = 'isfan.html';
                     backLink.innerHTML = `
