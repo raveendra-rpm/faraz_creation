@@ -616,10 +616,17 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: var(--bg-desktop);
     background-size: cover;
     background-position: center;
     z-index: 1;
     animation: zoomBackground 20s linear infinite alternate;
+}
+
+@media (max-width: 768px) {
+    .hero-bg-minimal {
+        background-image: var(--bg-mobile, var(--bg-desktop));
+    }
 }
 
 .hero-bg-minimal.slide {
@@ -1503,22 +1510,20 @@ button {
         -webkit-overflow-scrolling: touch;
         background: var(--color-bg-light);
         flex-direction: column;
-        padding: 100px 30px 40px;
-        gap: 20px;
+        padding: 75px 20px 30px;
+        gap: 12px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         transition: top 0.4s ease;
         z-index: 990;
         align-items: center;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
     }
 
 
 
     .desktop-nav a {
         color: var(--color-text-dark);
-        font-size: 1.1rem;
-        padding: 10px 0;
+        font-size: 0.95rem;
+        padding: 5px 0;
         border-bottom: none;
     }
 
@@ -1535,8 +1540,8 @@ button {
     .mobile-dropbtn {
         background: transparent;
         color: var(--color-text-dark);
-        font-size: 1.1rem;
-        padding: 10px 0;
+        font-size: 0.95rem;
+        padding: 5px 0;
         font-weight: 500;
         display: flex;
         align-items: center;
@@ -1649,6 +1654,22 @@ button {
     .consultation-content h2 {
         font-size: 1.8rem;
     }
+
+    /* Hero Slider Arrow & Padding adjustments */
+    .hero-content-minimal {
+        padding: 0 50px;
+    }
+    .slider-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+    .prev-btn {
+        left: 10px;
+    }
+    .next-btn {
+        right: 10px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1679,6 +1700,22 @@ button {
     .newsletter-form input,
     .newsletter-form button {
         width: 100%;
+    }
+
+    /* Very small devices slider adjustments */
+    .hero-content-minimal {
+        padding: 0 35px;
+    }
+    .slider-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .prev-btn {
+        left: 5px;
+    }
+    .next-btn {
+        right: 5px;
     }
 }
 
