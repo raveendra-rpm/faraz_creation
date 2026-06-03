@@ -344,6 +344,115 @@
         </div>
     </section>
 
+    <!-- Certifications & Associations -->
+    <style>
+        .cert-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            position: relative;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+            border-color: rgba(212, 175, 55, 0.3);
+            /* subtle gold border on hover */
+        }
+
+        .cert-card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+        }
+
+        .cert-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .section-header-elegant {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #222;
+            text-align: center;
+            margin-bottom: 35px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-header-elegant::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: #d4af37;
+            /* Gold accent */
+        }
+    </style>
+    <section class="certifications-associations section-padding" id="cert-assoc"
+        style="background: linear-gradient(135deg, #fcfcfc 0%, #f0f2f5 100%); padding-top: 80px; padding-bottom: 80px;">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 60px; justify-content: space-between;">
+                <!-- Certifications -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 class="section-header-elegant">Our Certifications</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
+                        <div class="cert-card">
+                            <img src="./images/certification/certificate_logo_faraz_two.jpeg" alt="Certification"
+                                onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="cert-card">
+                            <img src="./images/certification/certificate_logo_faraz_three.jpeg" alt="Certification"
+                                onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="cert-card">
+                            <img src="./images/certification/industry_association_fara_five.jpeg" alt="Certification"
+                                onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="cert-card">
+                            <img src="./images/certification/industry_association_faraz_six.jpeg" alt="Certification"
+                                onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry Associations -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 class="section-header-elegant">Industry Association</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
+                        <div class="cert-card">
+                            <img src="./images/certification/industry_association_faraz.jpeg" alt="Industry Association"
+                                onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="cert-card">
+                            <img src="./images/certification/industry_association_faraz_two.jpeg"
+                                alt="Industry Association" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="cert-card">
+                            <img src="./images/certification/industry_association_faraz_three.png"
+                                alt="Industry Association" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="cert-card">
+                            <img src="./images/certification/industry_association_faraz_four.webp"
+                                alt="Industry Association" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer / Contact Form -->
     <footer class="footer section-padding pb-0 bg-light" id="footer">
@@ -509,6 +618,35 @@
         }
     </script>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal"
+        style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,0.8); align-items: center; justify-content: center;">
+        <span
+            style="position: absolute; top: 20px; right: 40px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;"
+            onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img"
+            style="max-width: 90%; max-height: 90%; box-shadow: 0 4px 20px rgba(0,0,0,0.5); border-radius: 8px; background: #fff; padding: 20px;">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-modal').style.display = 'flex';
+            document.getElementById('lightbox-img').src = src;
+            document.body.style.overflow = 'hidden'; // prevent scrolling
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // re-enable scrolling
+        }
+
+        // Close when clicking outside the image
+        document.getElementById('lightbox-modal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 
 </html>
