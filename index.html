@@ -133,45 +133,53 @@
 
             <div class="grid-4 collection-grid">
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/shiraz_rugs.jpg" alt="Shiraz Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/shiraz_collection_faraz/shiraz_faraz_one.jpeg"
+                            alt="Shiraz Rug" loading="lazy"></div>
                     <p class="product-name">Shiraz</p>
                     <button class="btn-outline" onclick="window.location.href='shiraz.html'">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/kasan_rugs.jpg" alt="Kashan Port Rug" loading="lazy">
+                    <div class="img-wrapper"><img src="./images/kashanport_collection_faraz/kashanport_one.jpeg"
+                            alt="Kashan Port Rug" loading="lazy">
                     </div>
                     <p class="product-name">Kashan Port</p>
                     <button class="btn-outline" onclick="window.location.href='kashanport.html'">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/isfahan_rugs.jpg" alt="Isfahan Rug" loading="lazy">
+                    <div class="img-wrapper"><img src="./images/isfahan_collection_faraz/isfahan_col_one.jpeg"
+                            alt="Isfahan Rug" loading="lazy">
                     </div>
                     <p class="product-name">Isfahan</p>
                     <button class="btn-outline">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/red_tabriz.jpg" alt="Tabriz Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/tabriz_collection_faraz/tabriz_collection_one.jpeg"
+                            alt="Tabriz Rug" loading="lazy"></div>
                     <p class="product-name">Tabriz</p>
                     <button class="btn-outline" onclick="window.location.href='tabriz.html'">SHOP NOW</button>
                 </div>
                 <!-- Row 2 -->
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/ushak_rugs.jpg" alt="Oushak Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/oushak_collection_faraz/oshak_col_one.jpeg"
+                            alt="Oushak Rug" loading="lazy"></div>
                     <p class="product-name">Oushak</p>
                     <button class="btn-outline" onclick="window.location.href='oshak.html'">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/herig_rugs.jpg" alt="Heriz Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/heriz_collection_faraz/heriz_one.jpeg.jpeg"
+                            alt="Heriz Rug" loading="lazy"></div>
                     <p class="product-name">Heriz</p>
                     <button class="btn-outline" onclick="window.location.href='heriz.html'">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/gabbeh_rugs.jpg" alt="Gabbeh Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/Gabee Collection image/Gabeeh_01.jpeg" alt="Gabbeh Rug"
+                            loading="lazy"></div>
                     <p class="product-name">Gabbeh</p>
                     <button class="btn-outline" onclick="window.location.href='Gabbeh.html'">SHOP NOW</button>
                 </div>
                 <div class="product-card">
-                    <div class="img-wrapper"><img src="./images/kilim_rugs.jpg" alt="Kilim Rug" loading="lazy"></div>
+                    <div class="img-wrapper"><img src="./images/Kilim Collection image/Kilim-01.jpeg" alt="Kilim Rug"
+                            loading="lazy"></div>
                     <p class="product-name">Kilim</p>
                     <button class="btn-outline" onclick="window.location.href='Kilim.html'">SHOP NOW</button>
                 </div>
@@ -223,19 +231,19 @@
             <h3 class="section-title-sm text-center mb-5">Refine Your Surfaces</h3>
 
             <div class="grid-4 surface-grid">
-                <div class="surface-card">
+                <div class="surface-card" onclick="window.location.href='dark-woods.html'" style="cursor: pointer;">
                     <img src="./images/dark_woods.jpg" alt="Dark Woods Surface" loading="lazy">
                     <div class="surface-label">Dark Woods</div>
                 </div>
-                <div class="surface-card">
+                <div class="surface-card" onclick="window.location.href='warm-tones.html'" style="cursor: pointer;">
                     <img src="./images/warm_tone_rugs.jpg" alt="Warm Tones Surface" loading="lazy">
                     <div class="surface-label">Warm Tones</div>
                 </div>
-                <div class="surface-card">
+                <div class="surface-card" onclick="window.location.href='cool-palettes.html'" style="cursor: pointer;">
                     <img src="./images/cool_palettes_rugs.jpg" alt="Cool Palettes Surface" loading="lazy">
                     <div class="surface-label">Cool Palettes</div>
                 </div>
-                <div class="surface-card">
+                <div class="surface-card" onclick="window.location.href='patterns.html'" style="cursor: pointer;">
                     <img src="./images/Patterns_rugs.jpg" alt="Patterns Surface" loading="lazy">
                     <div class="surface-label">Patterns</div>
                 </div>
@@ -345,109 +353,190 @@
     </section>
 
     <!-- Certifications & Associations -->
+    <!-- Certifications & Associations -->
     <style>
-        .cert-card {
-            background: #fff;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 150px;
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            border: 1px solid rgba(0, 0, 0, 0.02);
+        .cert-assoc-section {
+            background-color: #faf9f6;
+            /* Premium soft beige */
+            padding: 100px 0;
             position: relative;
         }
 
-        .cert-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-            border-color: rgba(212, 175, 55, 0.3);
-            /* subtle gold border on hover */
-        }
-
-        .cert-card img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            cursor: pointer;
-            transition: transform 0.4s ease;
-        }
-
-        .cert-card:hover img {
-            transform: scale(1.05);
-        }
-
-        .section-header-elegant {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            color: #222;
-            text-align: center;
-            margin-bottom: 35px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        .section-header-elegant::after {
+        .cert-assoc-section::before {
             content: '';
             position: absolute;
-            bottom: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cert-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+
+        .cert-block {
+            width: 100%;
+        }
+
+        .cert-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            letter-spacing: 0.5px;
+        }
+
+        .cert-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
+            width: 50px;
             height: 2px;
             background: #d4af37;
             /* Gold accent */
         }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        @media (max-width: 992px) {
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .cert-card-premium {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 35px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 160px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .cert-card-premium::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0) 100%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .cert-card-premium:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .cert-card-premium:hover::before {
+            opacity: 1;
+        }
+
+        .cert-card-premium img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .cert-card-premium:hover img {
+            transform: scale(1.04);
+        }
     </style>
-    <section class="certifications-associations section-padding" id="cert-assoc"
-        style="background: linear-gradient(135deg, #fcfcfc 0%, #f0f2f5 100%); padding-top: 80px; padding-bottom: 80px;">
-        <div class="container">
-            <div style="display: flex; flex-wrap: wrap; gap: 60px; justify-content: space-between;">
-                <!-- Certifications -->
-                <div style="flex: 1; min-width: 300px;">
-                    <h3 class="section-header-elegant">Our Certifications</h3>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
-                        <div class="cert-card">
-                            <img src="./images/certification/certificate_logo_faraz_two.jpeg" alt="Certification"
-                                onclick="openLightbox(this.src)">
-                        </div>
-                        <div class="cert-card">
-                            <img src="./images/certification/certificate_logo_faraz_three.jpeg" alt="Certification"
-                                onclick="openLightbox(this.src)">
-                        </div>
-                        <div class="cert-card">
-                            <img src="./images/certification/industry_association_fara_five.jpeg" alt="Certification"
-                                onclick="openLightbox(this.src)">
-                        </div>
-                        <div class="cert-card">
-                            <img src="./images/certification/industry_association_faraz_six.jpeg" alt="Certification"
-                                onclick="openLightbox(this.src)">
-                        </div>
+    <section class="cert-assoc-section" id="cert-assoc">
+        <div class="cert-container">
+            <!-- Certifications -->
+            <div class="cert-block">
+                <h3 class="cert-title">Our Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/certificate_logo_faraz_two.jpeg" alt="Certification"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/certificate_logo_faraz_three.jpeg" alt="Certification"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/industry_association_fara_five.jpeg" alt="Certification"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/industry_association_faraz_six.jpeg" alt="Certification"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/cptat.webp" alt="Certification"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/dhs-logo_f.jpg" alt="Certification"
+                            onclick="openLightbox(this.src)">
                     </div>
                 </div>
+            </div>
 
-                <!-- Industry Associations -->
-                <div style="flex: 1; min-width: 300px;">
-                    <h3 class="section-header-elegant">Industry Association</h3>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
-                        <div class="cert-card">
-                            <img src="./images/certification/industry_association_faraz.jpeg" alt="Industry Association"
-                                onclick="openLightbox(this.src)">
-                        </div>
-                        <div class="cert-card">
-                            <img src="./images/certification/industry_association_faraz_two.jpeg"
-                                alt="Industry Association" onclick="openLightbox(this.src)">
-                        </div>
-                        <div class="cert-card">
-                            <img src="./images/certification/industry_association_faraz_three.png"
-                                alt="Industry Association" onclick="openLightbox(this.src)">
-                        </div>
-                        <div class="cert-card">
-                            <img src="./images/certification/industry_association_faraz_four.webp"
-                                alt="Industry Association" onclick="openLightbox(this.src)">
-                        </div>
+            <!-- Industry Associations -->
+            <div class="cert-block">
+                <h3 class="cert-title">Industry Association</h3>
+                <div class="cert-grid">
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/industry_association_faraz.jpeg" alt="Industry Association"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/industry_association_faraz_two.jpeg" alt="Industry Association"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/industry_association_faraz_three.png"
+                            alt="Industry Association" onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/industry_association_faraz_four.webp"
+                            alt="Industry Association" onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/goodweave.png" alt="Industry Association"
+                            onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="cert-card-premium">
+                        <img src="./images/certification/craft_mark_india.avif" alt="Industry Association"
+                            onclick="openLightbox(this.src)">
                     </div>
                 </div>
             </div>
